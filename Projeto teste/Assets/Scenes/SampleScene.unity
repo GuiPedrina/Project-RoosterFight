@@ -2335,7 +2335,7 @@ GameObject:
   - component: {fileID: 779673872}
   - component: {fileID: 779673873}
   - component: {fileID: 779673874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2507,7 +2507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 20
+  jumpForce: 15
   movement: {x: 0, y: 0}
 --- !u!114 &779673874
 MonoBehaviour:
@@ -2528,11 +2528,13 @@ MonoBehaviour:
   EnemyLayers:
     serializedVersion: 2
     m_Bits: 64
-  AtkRange: 0.1
+  AtkRange: 0.14
   DamageAtk: 20
   isFire: 0
-  attackRate: 2
-  nextAttack: 0
+  attackMeeleRate: 2
+  nextAttackMeele: 0
+  attackRangedRate: 2
+  nextAttackRanged: 0
 --- !u!1 &822920072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,7 +2551,7 @@ GameObject:
   - component: {fileID: 822920078}
   m_Layer: 6
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10126,7 +10128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627329435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10976,7 +10978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1740681131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AtkPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10991,7 +10993,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740681130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.056, y: -0.042, z: 0}
+  m_LocalPosition: {x: 0.0781, y: -0.0459, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

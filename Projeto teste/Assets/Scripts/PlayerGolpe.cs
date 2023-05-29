@@ -17,8 +17,10 @@ public class PlayerGolpe : MonoBehaviour
     public int DamageAtk = 10;
     public bool isFire;
 
-    public float attackRate = 2f;
-    public float nextAttack = 0;
+    public float attackMeeleRate = 2f;
+    public float nextAttackMeele = 0;
+    public float attackRangedRate = 5f;
+    public float nextAttackRanged = 0f;
 
 
 
@@ -40,16 +42,22 @@ public class PlayerGolpe : MonoBehaviour
     }
     void Update()
     {
-        if(Time.time >= nextAttack)
+        if(Time.time >= nextAttackMeele)
         {
             if (Controles.Player.AtkMeele.triggered)
             {
                 AttackMeele();
-                nextAttack = Time.time + 1f / attackRate;
+                nextAttackMeele = Time.time + 1f / attackMeeleRate;
             }
         }
-        AttackRanged();
-
+        if (Time.time >= nextAttackRanged)
+        {
+            if (Controles.Player.AtkRanged.triggered)
+            {
+                AttackRanged();
+                nextAttackRanged = Time.time + 1f / attackRangedRate;
+            }
+        }
     }
 
     void AttackMeele()
@@ -77,26 +85,25 @@ public class PlayerGolpe : MonoBehaviour
 
     IEnumerator Fire()
     {
-        if (Controles.Player.AtkRanged.triggered)
+     
+       isFire = true;
+       anim.SetInteger("transition", 3);
+       flecha = Instantiate(Flecha, AtkPoint.position, AtkPoint.rotation);
+
+
+        if (GetComponent<Player>().transform.rotation.y == 0)
         {
-            isFire = true;
-            anim.SetInteger("transition", 3);
-            flecha = Instantiate(Flecha,AtkPoint.position,AtkPoint.rotation);
-
-            if(GetComponent<Player>().transform.rotation.y == 0) 
-            {
-                flecha.GetComponent<Flecha>().Side = true;
-            }
-
-            else if(GetComponent<Player>().transform.rotation.y == -180)
-            {
-                flecha.GetComponent<Flecha>().Side = false;
-            }
-
-            yield return new WaitForSeconds(0.30f);
-            anim.SetInteger("transition", 0);
-            isFire = false;
+            flecha.GetComponent<Flecha>().Side = true;
         }
+
+        else if (GetComponent<Player>().transform.rotation.y == -180)
+        {
+            flecha.GetComponent<Flecha>().Side = false;
+        }
+
+        yield return new WaitForSeconds(0.30f);
+        anim.SetInteger("transition", 0);
+        isFire = false;
     }
 
     private void OnDrawGizmosSelected()
