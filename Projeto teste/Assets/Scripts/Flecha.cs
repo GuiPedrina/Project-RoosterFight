@@ -38,7 +38,7 @@ public class Flecha : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.GetComponent<Enemy>().Damage(dmg);
+            collision.GetComponent<Player2>().Dano(dmg);
             Destroy(gameObject);
         }
     }

@@ -2,40 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
+
     public float speed;
     public float jumpForce;
-    private bool isJumpin;
+    private bool isJump;
     public int maxHealth;
     private int currentHealth;
-    public float timeDie;
 
-    public ControlesPlayer Controles;
-    public Vector2 movement;
-    
+    public Vector2 moviment;
+    private ControlesPlayer Controle;
+    private Animator anim;
+
     private Rigidbody2D rig;
-    private Animator anima;
-
     private void Awake()
     {
-        Controles = new ControlesPlayer();
+        Controle = new ControlesPlayer();
     }
+
     void Start()
     {
         currentHealth = maxHealth;
         rig = GetComponent<Rigidbody2D>();
-        anima = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     private void OnEnable()
     {
-        Controles.Enable();
+        Controle.Enable();
     }
 
     private void OnDisable()
     {
-        Controles.Disable();
+        Controle.Disable();
     }
 
     // Update is called once per frame
@@ -43,18 +43,17 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
-       // GetComponent<PlayerGolpe>().AttackRanged();
     }
 
     public void Dano(int dano)
     {
         currentHealth -= dano;
 
-        anima.SetTrigger("isDamege");
+        anim.SetTrigger("isDamege");
 
         if (currentHealth > 0)
         {
-            anima.SetInteger("transition", 0);
+            anim.SetInteger("transition", 0);
         }
         if (currentHealth < 0)
         {
@@ -64,74 +63,66 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-         movement = Controles.Player.Movimentacao.ReadValue<Vector2>();
-    
-            rig.velocity = new Vector2(movement.x * speed, rig.velocity.y);
-        if(movement.x > 0)
+        moviment = Controle.Player2.Movimentacao.ReadValue<Vector2>();
+        rig.velocity = new Vector2(moviment.x * speed, rig.velocity.y);
+
+        if (moviment.x > 0)
         {
             transform.eulerAngles = new Vector2(0f, 0f);
-            if (!isJumpin)
+            if (!isJump)
             {
-                anima.SetInteger("transition", 1);
+                anim.SetInteger("transition", 1);
             }
-            
-            
         }
-
-        if (movement.x < 0)
+        
+        if (moviment.x < 0)
         {
             transform.eulerAngles = new Vector2(0f, 180f);
-            if (!isJumpin)
+            if (!isJump)
             {
-                anima.SetInteger("transition", 1);
+                anim.SetInteger("transition", 1);
             }
-            
-        }
-        if(movement.x == 0 && !isJumpin && !GetComponent<PlayerGolpe>().isFire)
-        {
-            anima.SetInteger("transition", 0);
         }
 
+        if(moviment.x == 0 && !isJump && !GetComponent<Player2Golpe>().isSoco)
+        {
+            anim.SetInteger("transition", 0);
+        }
     }
 
     void Jump()
     {
-        if (Controles.Player.Jump.triggered)
+        if (Controle.Player2.Jump.triggered)
         {
-            if (!isJumpin)
+            if (!isJump)
             {
                 rig.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-                isJumpin = true;
-                anima.SetInteger("transition", 2);
-                
+                isJump = true;
+                anim.SetInteger("transition", 2);
+
             }
-            
         }
     }
 
     void Die()
     {
         //animação de morte
-        anima.SetBool("isDie", true);
+        
 
         //desabilitando personagem
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         GetComponent<Collider2D>().enabled = false;
         GetComponent<CircleCollider2D>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
-        if (Time.time >= timeDie)
-        {
-            GetComponent<SpriteRenderer>().enabled = false;
-            this.enabled = true;
-        }
+        GetComponent<SpriteRenderer>().enabled = false;
+        this.enabled = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+        private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.layer == 8)
         {
-            isJumpin = false;
-
+            isJump = false;
         }
     }
 }

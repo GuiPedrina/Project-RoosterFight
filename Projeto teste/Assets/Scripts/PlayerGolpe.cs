@@ -14,7 +14,7 @@ public class PlayerGolpe : MonoBehaviour
     public LayerMask EnemyLayers;
 
     public float AtkRange = 0.5f;
-    public int DamageAtk = 10;
+    public int DamageAtk;
     public bool isFire;
 
     public float attackMeeleRate = 2f;
@@ -71,8 +71,9 @@ public class PlayerGolpe : MonoBehaviour
         //Dano do ataque
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().Damage(DamageAtk);
-            
+            //enemy.GetComponent<Enemy>().Damage(DamageAtk);
+            enemy.GetComponent<Player2>().Dano(DamageAtk);
+
         }
     }
 

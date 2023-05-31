@@ -198,6 +198,129 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Player2"",
+            ""id"": ""b5353125-3b9d-491d-9dc6-a4b555835a50"",
+            ""actions"": [
+                {
+                    ""name"": ""Movimentacao"",
+                    ""type"": ""Value"",
+                    ""id"": ""1cfe677b-8eb8-4a01-98f8-18395930f96a"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""978bc484-6b3d-44f6-9022-8709067116ae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MeeleAtk"",
+                    ""type"": ""Button"",
+                    ""id"": ""c2071726-2391-4afc-8ef2-5e33543fcc6e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""movimentoP2"",
+                    ""id"": ""54f3a4da-bae9-4ed2-9c10-3739d49a182f"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movimentacao"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""5b2fc3fe-1b41-492d-b0fc-07401f5022f3"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movimentacao"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""92542c28-bd58-475f-aee5-969cf32fe4ab"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movimentacao"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""bab0e733-977c-432e-a983-aa0d6113ad03"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movimentacao"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""9e1cf30a-36cb-4cae-a06e-84f24ec9f84f"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movimentacao"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""18966fd4-d1e5-49f0-8ce1-91e1e393a498"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movimentacao"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8f9ba905-6f3c-4969-8ef2-782c354a9fb1"",
+                    ""path"": ""<Keyboard>/numpad3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""86469a66-3d59-4b14-9b24-d54f48217d5d"",
+                    ""path"": ""<Keyboard>/numpad2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MeeleAtk"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -208,6 +331,11 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_AtkMeele = m_Player.FindAction("AtkMeele", throwIfNotFound: true);
         m_Player_AtkRanged = m_Player.FindAction("AtkRanged", throwIfNotFound: true);
+        // Player2
+        m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
+        m_Player2_Movimentacao = m_Player2.FindAction("Movimentacao", throwIfNotFound: true);
+        m_Player2_Jump = m_Player2.FindAction("Jump", throwIfNotFound: true);
+        m_Player2_MeeleAtk = m_Player2.FindAction("MeeleAtk", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -335,11 +463,79 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Player2
+    private readonly InputActionMap m_Player2;
+    private List<IPlayer2Actions> m_Player2ActionsCallbackInterfaces = new List<IPlayer2Actions>();
+    private readonly InputAction m_Player2_Movimentacao;
+    private readonly InputAction m_Player2_Jump;
+    private readonly InputAction m_Player2_MeeleAtk;
+    public struct Player2Actions
+    {
+        private @ControlesPlayer m_Wrapper;
+        public Player2Actions(@ControlesPlayer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movimentacao => m_Wrapper.m_Player2_Movimentacao;
+        public InputAction @Jump => m_Wrapper.m_Player2_Jump;
+        public InputAction @MeeleAtk => m_Wrapper.m_Player2_MeeleAtk;
+        public InputActionMap Get() { return m_Wrapper.m_Player2; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(Player2Actions set) { return set.Get(); }
+        public void AddCallbacks(IPlayer2Actions instance)
+        {
+            if (instance == null || m_Wrapper.m_Player2ActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_Player2ActionsCallbackInterfaces.Add(instance);
+            @Movimentacao.started += instance.OnMovimentacao;
+            @Movimentacao.performed += instance.OnMovimentacao;
+            @Movimentacao.canceled += instance.OnMovimentacao;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
+            @MeeleAtk.started += instance.OnMeeleAtk;
+            @MeeleAtk.performed += instance.OnMeeleAtk;
+            @MeeleAtk.canceled += instance.OnMeeleAtk;
+        }
+
+        private void UnregisterCallbacks(IPlayer2Actions instance)
+        {
+            @Movimentacao.started -= instance.OnMovimentacao;
+            @Movimentacao.performed -= instance.OnMovimentacao;
+            @Movimentacao.canceled -= instance.OnMovimentacao;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
+            @MeeleAtk.started -= instance.OnMeeleAtk;
+            @MeeleAtk.performed -= instance.OnMeeleAtk;
+            @MeeleAtk.canceled -= instance.OnMeeleAtk;
+        }
+
+        public void RemoveCallbacks(IPlayer2Actions instance)
+        {
+            if (m_Wrapper.m_Player2ActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayer2Actions instance)
+        {
+            foreach (var item in m_Wrapper.m_Player2ActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_Player2ActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public Player2Actions @Player2 => new Player2Actions(this);
     public interface IPlayerActions
     {
         void OnMovimentacao(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnAtkMeele(InputAction.CallbackContext context);
         void OnAtkRanged(InputAction.CallbackContext context);
+    }
+    public interface IPlayer2Actions
+    {
+        void OnMovimentacao(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnMeeleAtk(InputAction.CallbackContext context);
     }
 }
