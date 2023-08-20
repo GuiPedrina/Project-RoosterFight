@@ -11,7 +11,7 @@ public class Player1Move : MonoBehaviour
 
     private Rigidbody2D rig;
     private ControlesPlayer controles;
-    private Vector2 moviment;
+    public Vector2 moviment;
     public Animator anim;
 
 
@@ -67,7 +67,7 @@ public class Player1Move : MonoBehaviour
 
         }
 
-        //condição que vê se está andando pra direita
+        //condição que vê se está andando pra esquerda
         if (moviment.x < 0)
         {
             //rotaciona o player pra esquerda

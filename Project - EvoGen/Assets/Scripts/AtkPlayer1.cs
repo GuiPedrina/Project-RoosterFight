@@ -8,8 +8,9 @@ public class AtkPlayer1 : MonoBehaviour
     private Animator anim;
     public Transform AtkPoint;
     public ControlesPlayer controles;
-    public GameObject boladeFogo;
+    private GameObject boladeFogo;
     public GameObject BolaFogo;
+    public LayerMask enemyLayers;
 
     public float AtkRange = 0.5f;
     public float nextAtkRanged = 0f;
@@ -33,6 +34,7 @@ public class AtkPlayer1 : MonoBehaviour
 
     void Update()
     {
+        /*
         if(Time.time >= nextAtkRanged)
         {
             if (controles.Player.AtkRanged.triggered)
@@ -41,8 +43,21 @@ public class AtkPlayer1 : MonoBehaviour
                 nextAtkRanged = Time.time + 1f / nextAtkRangedRate;
             }
         }
+        */
     }
 
+    void Meele()
+    {
+        anim.SetTrigger("Punch");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AtkPoint.position, AtkRange, enemyLayers);
+
+        foreach(Collider2D enemy in hitEnemies)
+        {
+
+        }
+    }
+/*
     private void AtkRanged()
     {
        StartCoroutine("Fire");
@@ -78,4 +93,5 @@ public class AtkPlayer1 : MonoBehaviour
         }
         Gizmos.DrawSphere(AtkPoint.position, AtkRange);
     }
+    */
 }
