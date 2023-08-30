@@ -7,23 +7,26 @@ public class Player1Move : MonoBehaviour
 
     public float speed;
     public float jumpingForce;
+    private int vida;
     public bool isJumping;
 
     private Rigidbody2D rig;
     private ControlesPlayer controles;
     public Vector2 moviment;
     public Animator anim;
+    public SpriteRenderer sprite;
 
 
     private void Awake()
     {
-        controles = new ControlesPlayer(); ;
+        controles = new ControlesPlayer();
     }
     void Start()
     {
 
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        vida = 100;
 
     }
 
@@ -43,6 +46,20 @@ public class Player1Move : MonoBehaviour
         Move();
         Jumping();
         anim.SetFloat("Fall", rig.velocity.y);
+    }
+
+    private void Dano(int dano) 
+    {
+        vida -= dano;
+    }
+
+    private void Morte()
+    {
+        if (vida <= 0)
+        {
+            sprite.enabled = false;
+            rig.bodyType = RigidbodyType2D.Kinematic;
+        }
     }
 
     //função de movimentação do player 1 
@@ -100,6 +117,16 @@ public class Player1Move : MonoBehaviour
                 
             }
         }
+    }
+
+    private int getVida()
+    {
+        return vida;
+    }
+
+    private void setVida(int somaVida)
+    {
+        vida += somaVida; 
     }
     void OnCollisionEnter2D(Collision2D collision)
     {

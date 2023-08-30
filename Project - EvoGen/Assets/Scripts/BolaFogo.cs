@@ -9,6 +9,9 @@ public class BolaFogo : MonoBehaviour
 
     public float speed;
     public int time;
+    public bool side;
+
+    private int damage = 10;
 
     void Start()
     {
@@ -18,26 +21,28 @@ public class BolaFogo : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        MovimentoProjetil();
-        ObjectDestroy();
+    { 
+      MovimentoProjetil();       
     }
 
     void MovimentoProjetil()
     {
-        rig.velocity = new Vector2(1f * speed, rig.velocity.y);
+        if (side)
+        {
+            rig.velocity = new Vector2(1f * speed, rig.velocity.y);
+        }
+        if(side == false)
+        {
+            rig.velocity = new Vector2(-1f * speed, rig.velocity.y);
+        }
     }
 
-    IEnumerator ObjectDestroy()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (time >= 0 )
-        {
-            Destroy(gameObject);
-            //render.enabled = false;
-        }
-        yield return new WaitForSeconds(1);
-        time--;
+        collision.GetComponent<Player2>().dano(damage);
+        Destroy(gameObject);
     }
+
 }
 
 

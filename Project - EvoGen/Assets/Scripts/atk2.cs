@@ -8,20 +8,20 @@ public class atk2 : MonoBehaviour
     public ControlesPlayer controles;
 
     private Animator anim;
-    public Transform atkPoint;
+    public Transform atkPointSoco;
+    public Transform atkPointFogo;
     public LayerMask LayerEnemy;
 
 
     public float nextAtkMeele;
     public float attackMeeleRate = 2f;
     public float atkRange;
+    public float nextAtkRange;
+    public float atkRangeRate = 2f;
+    public GameObject profBolaDeFogo;
 
 
  
-
-
-
-
 
     private void Awake()
     {
@@ -56,16 +56,20 @@ public class atk2 : MonoBehaviour
             }
         }
 
-        if (controles.Player.AtkRanged.triggered)
+        if (Time.time > nextAtkRange)
         {
-            AtkRanged();
+            if (controles.Player.AtkRanged.triggered)
+            {
+                AtkRanged();
+                nextAtkRange = Time.time + 1f / atkRangeRate;
+            }
         }
     }
     private void AtkMeele()
     {
         
             anim.SetTrigger("Punch");
-            Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(atkPoint.position, atkRange, LayerEnemy);
+            Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(atkPointSoco.position, atkRange, LayerEnemy);
 
             foreach (Collider2D damage in hitEnemy)
             {
@@ -77,6 +81,8 @@ public class atk2 : MonoBehaviour
     private void AtkRanged()
     {
         Transform rotate;
+        StartCoroutine(Atira());
+
         rotate = GetComponent<Transform>();
         anim.SetTrigger("Fire");
         if(rotate.rotation.y == 0f)
@@ -88,6 +94,29 @@ public class atk2 : MonoBehaviour
         {
             transform.eulerAngles = new Vector2(0f, 0f);
         }
+
+        
+        
+    }
+
+    IEnumerator Atira()
+    {
+        GameObject gerarFogo = Instantiate(profBolaDeFogo, atkPointFogo.position, atkPointFogo.rotation);
+
+        if (GetComponent<Player1Move>().transform.rotation.y == 0)
+        {
+            gerarFogo.GetComponent<BolaFogo>().side = true;
+        }
+        if (GetComponent<Player1Move>().transform.rotation.y == 180)
+        {
+            gerarFogo.GetComponent<BolaFogo>().side = false;
+        }
+
+
+
+        yield return new WaitForSeconds(2);
+        Destroy(gerarFogo);
+
     }
 
 
