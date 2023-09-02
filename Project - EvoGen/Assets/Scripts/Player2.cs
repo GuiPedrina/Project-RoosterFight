@@ -73,7 +73,7 @@ public class Player2 : MonoBehaviour
         {
             transform.eulerAngles = new Vector2(0f, 180f);
 
-            if (isJumping)
+            if (!isJumping)
             {
                 anim.SetInteger("transition", 1);
             }
@@ -83,7 +83,7 @@ public class Player2 : MonoBehaviour
         {
             transform.eulerAngles = new Vector2(0f, 0f);
 
-            if (isJumping)
+            if (!isJumping)
             {
                anim.SetInteger("transition", 1);
             }
