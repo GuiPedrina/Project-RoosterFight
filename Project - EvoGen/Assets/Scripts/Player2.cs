@@ -5,10 +5,13 @@ using UnityEngine;
 public class Player2 : MonoBehaviour
 {
     public int life;
+    private bool isCair = false;
     public float speed;
-    private Vector2 moviment;
+    public float rangeMorte;
+    [SerializeField]private Vector2 moviment;
     public bool isJumping, isDoubleJumping = false;
     public int forceJumping;
+    public LayerMask layerMorte;
     
 
     private Rigidbody2D rig;
@@ -45,16 +48,19 @@ public class Player2 : MonoBehaviour
     void Update()
     {
         Morte();
-        Movimento();
         Jumping();
+        Movimento();
+        anim.SetFloat("fall", rig.velocity.y);
+        rig.velocity = new Vector2(moviment.x * speed, rig.velocity.y);
     }
 
     private void Morte()
     {
-        if (life <= 0)
+        Collider2D[] morto = Physics2D.OverlapCircleAll(rig.position,rangeMorte , layerMorte);
+
+        foreach (Collider2D morte in morto)
         {
-            sprite.enabled = false;
-            rig.bodyType = RigidbodyType2D.Kinematic;
+            gameObject.transform.position = new Vector2(3.89f, -0.22f);
         }
     }
 
@@ -67,25 +73,27 @@ public class Player2 : MonoBehaviour
     {
         moviment = controles.Player2.Movimentacao.ReadValue<Vector2>();
 
-        rig.velocity = new Vector2(moviment.x * speed, rig.velocity.y);
+       
 
-        if(moviment.x < 0)
+        if(moviment.x < 0 && !isCair)
         {
             transform.eulerAngles = new Vector2(0f, 180f);
 
             if (!isJumping)
             {
                 anim.SetInteger("transition", 1);
+                
             }
         }
 
-        if (moviment.x > 0)
+        if (moviment.x > 0 && !isCair)
         {
             transform.eulerAngles = new Vector2(0f, 0f);
 
             if (!isJumping)
             {
                anim.SetInteger("transition", 1);
+               
             }
         }
 
@@ -101,21 +109,12 @@ public class Player2 : MonoBehaviour
         {
             if (!isJumping)
             {
-                rig.velocity = new Vector2(rig.velocity.x, 0f); // Isso evita que a velocidade vertical acumule durante os pulos.
                 rig.AddForce(new Vector2(0f, forceJumping), ForceMode2D.Impulse);
                 anim.SetInteger("transition", 2);
                 isJumping = true;
             }
 
         }
-            if (isDoubleJumping && isJumping)
-            {
-                rig.velocity = new Vector2(rig.velocity.x, 0f); // Isso evita que a velocidade vertical acumule durante os pulos.
-                rig.AddForce(new Vector2(0f, forceJumping), ForceMode2D.Impulse);
-                anim.SetInteger("transition", 2);
-                isJumping = true;
-                isDoubleJumping = false;
-            }
     }
 
     void OnCollisionEnter2D(Collision2D collision)

@@ -68,9 +68,9 @@ public class atk2 : MonoBehaviour
     private void AtkMeele()
     {
         
-            anim.SetTrigger("Punch");
+            
             Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(atkPointSoco.position, atkRange, LayerEnemy);
-
+            anim.SetTrigger("Punch");
             foreach (Collider2D damage in hitEnemy)
             {
                 damage.GetComponent<Player2>().life -= 10;

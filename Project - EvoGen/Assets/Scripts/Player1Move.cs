@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player1Move : MonoBehaviour
 {
@@ -9,12 +10,22 @@ public class Player1Move : MonoBehaviour
     public float jumpingForce;
     private int vida;
     public bool isJumping;
+    public float rangeMorte;
+    public LayerMask layerMorte;
+
+    public bool doubleJump;
+    public bool isPuloCair = false;
 
     private Rigidbody2D rig;
     private ControlesPlayer controles;
     public Vector2 moviment;
     public Animator anim;
     public SpriteRenderer sprite;
+
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float groundCheckTamanho = 0.2f;
+    [SerializeField] private bool cheked;
 
 
     private void Awake()
@@ -44,8 +55,11 @@ public class Player1Move : MonoBehaviour
     void Update()
     {
         Move();
-        Jumping();
+        isGround();
         anim.SetFloat("Fall", rig.velocity.y);
+        Morte();
+
+        
     }
 
     private void Dano(int dano) 
@@ -55,11 +69,18 @@ public class Player1Move : MonoBehaviour
 
     private void Morte()
     {
-        if (vida <= 0)
+        Collider2D[] morto = Physics2D.OverlapCircleAll(rig.position, rangeMorte, layerMorte);
+
+        foreach (Collider2D morte in morto)
         {
-            sprite.enabled = false;
-            rig.bodyType = RigidbodyType2D.Kinematic;
+            gameObject.transform.position = new Vector2(-3.39f, -0.14f);
         }
+    }
+
+    private bool isGround()
+    {
+        cheked = Physics2D.OverlapCircle(groundCheck.position, groundCheckTamanho, groundLayer);
+        return cheked;
     }
 
     //função de movimentação do player 1 
@@ -105,17 +126,32 @@ public class Player1Move : MonoBehaviour
     }
 
     //função de pulo
-    private void Jumping()
+    public void Jump(InputAction.CallbackContext context)
     {
-        if (controles.Player.Jump.triggered)
+
+        if (context.performed && (cheked || doubleJump ))
         {
-            if (!isJumping)
-            {
-                rig.AddForce(new Vector2(0f, jumpingForce), ForceMode2D.Impulse);
-                anim.SetInteger("transition", 2);
-                isJumping = true;
-                
-            }
+            rig.velocity = new Vector2(rig.velocity.x, jumpingForce);
+            anim.SetInteger("transition", 2);
+            isJumping = true;
+            doubleJump = !doubleJump;
+
+
+        }
+        if(rig.velocity.y < 0 && isPuloCair == false)
+        {
+            rig.velocity = new Vector2(rig.velocity.x, jumpingForce);
+            anim.SetInteger("transition", 2);
+            isJumping = true;
+            isPuloCair = true;
+        }
+
+
+        if(context.canceled && rig.velocity.y > 0f)
+        {
+            rig.velocity = new Vector2(rig.velocity.x, rig.velocity.y * 0.5f);
+            anim.SetInteger("transition", 2);
+
         }
     }
 
@@ -133,17 +169,9 @@ public class Player1Move : MonoBehaviour
         if (collision.gameObject.layer == 3)
         {
             isJumping = false;
+            doubleJump = false;
+            isPuloCair = false;
             anim.SetInteger("transition", 0);
         }
     }
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == 3)
-        {
-            isJumping = true;
-
-        }
-    }
-
-
 }
