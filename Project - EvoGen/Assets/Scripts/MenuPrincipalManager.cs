@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class MenuPrincipalManager : MonoBehaviour
 {
@@ -11,16 +13,33 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject painelSons;
     [SerializeField] private GameObject painelControles;
 
+    [SerializeField] private Button ButtonOpcoes;
+
+    [SerializeField] private Button ButtonFazL;
+
+    [SerializeField] private AudioSource fazL;
+
+    [SerializeField] private AudioSource fundoMusical;
+
+   
+
+
+    private void Awake(){
+        ButtonOpcoes.onClick.AddListener(OnButtonAbrirOpcoes);
+        ButtonFazL.onClick.AddListener(FazL);
+    }
+
+  
     public void Jogar()
     {
         SceneManager.LoadScene(nomeDoLevelDeJogo);
     }
-
-    public void AbrirOpcoes()
-    {
+ 
+    public void OnButtonAbrirOpcoes()
+    {       
         painelMenuInicial.SetActive(false);
         painelOpcoes.SetActive(true);
-        
+         
     }
  
     public void FecharOpcoes()
@@ -62,5 +81,10 @@ public class MenuPrincipalManager : MonoBehaviour
         painelControles.SetActive(false);
         painelOpcoes.SetActive(true);
         
+    }
+
+    public void FazL(){
+        fazL.Play();
+        fundoMusical.Stop();
     }
 }
