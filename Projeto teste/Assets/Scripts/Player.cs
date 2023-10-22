@@ -66,8 +66,9 @@ public class Player : MonoBehaviour
     {
          movement = Controles.Player.Movimentacao.ReadValue<Vector2>();
     
-            rig.velocity = new Vector2(movement.x * speed, rig.velocity.y);
-        if(movement.x > 0)
+            rig.velocity = new Vector2(movement.x * speed, rig.position.y);
+        print(rig.velocity.y);
+        if (movement.x > 0)
         {
             transform.eulerAngles = new Vector2(0f, 0f);
             if (!isJumpin)
