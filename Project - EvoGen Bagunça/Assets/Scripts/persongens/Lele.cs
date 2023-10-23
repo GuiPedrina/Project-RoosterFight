@@ -6,7 +6,7 @@ public class Lele : PersonagemBase
 {
     void Update()
     {
-        isGround();
+        IsGround();
     }
 
 

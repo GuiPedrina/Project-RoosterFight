@@ -11,8 +11,10 @@ public class Zhang : PersonagemBase
 
     private void Update()
     {
-        isGround();
-        print(isGround());
+        IsGround();
+        NoAr();
+        anim.SetFloat("Fall", rig.velocity.y);
+        print(NoAr());
 
     }
 

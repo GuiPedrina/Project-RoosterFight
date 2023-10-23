@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Player1Controller : MonoBehaviour
 
 {
-    private int idPersonagem = 1;
+    [SerializeField] private int idPersonagem = 1;
     private Vector2 direcao;
 
     [SerializeField] private Transform trfPlayer1;

@@ -13,19 +13,25 @@ public class PersonagemBase : MonoBehaviour
     // vida/dano
 
 
-    private Rigidbody2D rig;
+    public Rigidbody2D rig;
     private Transform posicao;
-    private Animator anim;
+    public Animator anim;
     private BoxCollider2D box;
     
     
 
     public Vector2 movement;
-    private bool grouded;
-    
+    private bool grounded;
+    private bool isDoubleJumping;
+    private bool isJumping = false;
+    private bool isAir = false;
+    private int pulosExtras;
+
+
     public Transform groundCheck;
     public float raio;
     public LayerMask layerChao;
+    
 
 
     [SerializeField] private float jumpForce = 12.0f;
@@ -36,13 +42,13 @@ public class PersonagemBase : MonoBehaviour
 
     void OnEnable()
     {
-        Player1Controller.OnHorizontalReceived += andar;
-        Player1Controller.OnJumpReceived += pular;
+        Player1Controller.OnHorizontalReceived += Andar;
+        Player1Controller.OnJumpReceived += Pular;
     }
 
     void OnDisable()
     {
-        Player1Controller.OnHorizontalReceived -= andar;
+        Player1Controller.OnHorizontalReceived -= Andar;
     }
 
     public void Start()
@@ -54,21 +60,25 @@ public class PersonagemBase : MonoBehaviour
     }
 
 
-    void andar(float horizontal)
+    void Andar(float horizontal)
     {
         // Lógica para processar os inputs recebidos
         // Por exemplo, mover o objeto com base nos inputs
+
         Vector2 movimento = new Vector2(horizontal * speed, rig.velocity.y);
         print(horizontal);
-        rig.velocity = movimento;
+        
+        rig.velocity= movimento;
 
-        anim.SetInteger("transition", 1);
-        if(horizontal == 0)
+        if(!isAir && !isJumping)
+        {
+            anim.SetInteger("transition", 1);
+        }
+        if(horizontal == 0 && !isAir && !isJumping) 
         {
             anim.SetInteger("transition", 0);
         }
         
-
 
         if (!Mathf.Approximately(horizontal, 0))
         {
@@ -76,12 +86,30 @@ public class PersonagemBase : MonoBehaviour
         }
     }
 
-    void pular(InputAction.CallbackContext context)
-    {
-        if (grouded && context.performed)
+    void Pular(InputAction.CallbackContext context)
+     {
+        if (grounded && context.performed)
         {
-            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
             
+            isJumping = true;
+            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
+            anim.SetInteger("transition", 2);
+            pulosExtras++;
+            rig.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
+        else if (!grounded && context.performed && pulosExtras > 0)
+        {
+            isJumping = true;
+            rig.velocity = new Vector2(rig.velocity.x, jumpForce);
+            anim.SetTrigger("DoubleJump");
+            pulosExtras--;
+
+        }
+
+        if (context.canceled && rig.velocity.y > 0f)
+        {
+            rig.velocity = new Vector2(rig.velocity.x, rig.velocity.y * 0.5f);
         }
     }
 
@@ -103,10 +131,9 @@ public class PersonagemBase : MonoBehaviour
 
     //}
 
-
-
     //Função que confere c estou no chão
-    public bool isGround()
+
+    public bool IsGround()
     {
         Collider2D[] collider = Physics2D.OverlapCircleAll(groundCheck.position, raio, layerChao);
 
@@ -117,12 +144,34 @@ public class PersonagemBase : MonoBehaviour
                 //Confere c não é o player
                 if(collider[i].gameObject != gameObject)
                 {
-                    return grouded = true; 
+                    
+                    if (isJumping == false)
+                    {
+                    rig.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation; 
+                    }
+                    pulosExtras = 1;
+                    return grounded = true;
+                    
                 }
 
             }
         }
-        return  grouded = false;
+        rig.constraints = RigidbodyConstraints2D.FreezeRotation;
+        isJumping = false;
+        return  grounded = false;
+    }
+
+    public bool NoAr()
+    {
+        if (rig.velocity.y != 0)
+        {
+            
+            return isAir = true;
+        }
+        else
+        {
+            return isAir = false;
+        }
     }
 
 }

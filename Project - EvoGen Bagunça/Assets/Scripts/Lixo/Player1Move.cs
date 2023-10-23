@@ -154,7 +154,6 @@ public class Player1Move : MonoBehaviour
         {
             rig.velocity = new Vector2(rig.velocity.x, rig.velocity.y * 0.5f);
             anim.SetInteger("transition", 2);
-
         }
     }
 

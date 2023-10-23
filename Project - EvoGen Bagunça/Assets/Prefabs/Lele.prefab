@@ -179,13 +179,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a221eac7ea4edd458fde5f89f5ab455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rig: {fileID: 0}
+  anim: {fileID: 0}
   movement: {x: 0, y: 0}
   groundCheck: {fileID: 3866281403340964428}
-  raio: 0.15
+  raio: 0.05
   layerChao:
     serializedVersion: 2
     m_Bits: 8
-  jumpForce: 12
+  jumpForce: 16
   speed: 2
 --- !u!95 &-3792545519166784028
 Animator:
