@@ -16,23 +16,23 @@ public class Player2 : MonoBehaviour
 
     private Rigidbody2D rig;
     private SpriteRenderer sprite;
-    private ControlesPlayer controles;
+    private ControlesPlayer2 controles2;
     private Animator anim;
 
 
     private void Awake()
     {
-        controles = new ControlesPlayer();
+        controles2 = new ControlesPlayer2();
     }
 
     private void OnEnable()
     {
-        controles.Enable();
+        controles2.Enable();
     }
 
     private void OnDisable()
     {
-        controles.Disable();
+        controles2.Disable();
     }
     void Start()
     {
@@ -71,7 +71,7 @@ public class Player2 : MonoBehaviour
 
     public void Movimento()
     {
-        moviment = controles.Player2.Movimentacao.ReadValue<Vector2>();
+        moviment = controles2.Player2.movimentacao.ReadValue<Vector2>();
 
        
 
@@ -105,7 +105,7 @@ public class Player2 : MonoBehaviour
 
     private void Jumping()
     {
-        if (controles.Player2.Jump.triggered)
+        if (controles2.Player2.Pulo.triggered)
         {
             if (!isJumping)
             {

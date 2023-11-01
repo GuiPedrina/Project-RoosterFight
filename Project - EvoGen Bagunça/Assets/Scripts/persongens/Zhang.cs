@@ -14,7 +14,7 @@ public class Zhang : PersonagemBase
         IsGround();
         NoAr();
         anim.SetFloat("Fall", rig.velocity.y);
-        print(NoAr());
+        //print(NoAr());
 
     }
 

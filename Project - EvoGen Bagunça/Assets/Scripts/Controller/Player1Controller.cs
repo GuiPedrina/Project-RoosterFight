@@ -7,6 +7,7 @@ public class Player1Controller : MonoBehaviour
 
 {
     [SerializeField] private int idPersonagem = 1;
+    
     private Vector2 direcao;
 
     [SerializeField] private Transform trfPlayer1;
@@ -67,10 +68,11 @@ public class Player1Controller : MonoBehaviour
 
     public void Movimento()
     {
-            direcao = controle.Player.Movimentacao.ReadValue<Vector2>(); // vector2(-1,0)
-            if (OnHorizontalReceived != null) { OnHorizontalReceived(direcao.x); }            
+        direcao = controle.Player.Movimentacao.ReadValue<Vector2>(); // vector2(-1,0)
+        //print("to no direção 1:" + direcao);
+        if (OnHorizontalReceived != null) { OnHorizontalReceived(direcao.x); }            
     }
-
+    
     public void Pulo(InputAction.CallbackContext context)
     {
             if (OnJumpReceived != null) { OnJumpReceived(context); }

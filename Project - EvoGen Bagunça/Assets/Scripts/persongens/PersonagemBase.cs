@@ -49,6 +49,7 @@ public class PersonagemBase : MonoBehaviour
     void OnDisable()
     {
         Player1Controller.OnHorizontalReceived -= Andar;
+        Player1Controller.OnJumpReceived += Pular;
     }
 
     public void Start()
@@ -66,7 +67,7 @@ public class PersonagemBase : MonoBehaviour
         // Por exemplo, mover o objeto com base nos inputs
 
         Vector2 movimento = new Vector2(horizontal * speed, rig.velocity.y);
-        print(horizontal);
+        //print(horizontal);
         
         rig.velocity= movimento;
 
