@@ -73,6 +73,7 @@ public class PlayerGolpe : MonoBehaviour
         {
             //enemy.GetComponent<Enemy>().Damage(DamageAtk);
             enemy.GetComponent<Player2>().Dano(DamageAtk);
+              
 
         }
     }

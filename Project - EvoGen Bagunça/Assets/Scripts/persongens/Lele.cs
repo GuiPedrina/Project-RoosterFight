@@ -7,6 +7,9 @@ public class Lele : PersonagemBase
     void Update()
     {
         IsGround();
+        NoAr();
+        
+        //print(NoAr());
     }
 
 
