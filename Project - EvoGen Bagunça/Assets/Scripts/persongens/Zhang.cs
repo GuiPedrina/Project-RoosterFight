@@ -21,7 +21,7 @@ public class Zhang : PersonagemBase
         NoAr();
         anim.SetFloat("Fall", rig.velocity.y);
         //print(NoAr());
-
+    }
     public void SaiVoando()
     {
         rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 5);
