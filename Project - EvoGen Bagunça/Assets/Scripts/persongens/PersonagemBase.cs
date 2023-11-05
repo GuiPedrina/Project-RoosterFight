@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PersonagemBase : MonoBehaviour
+public  class PersonagemBase : MonoBehaviour
 {
     // isGround()
     // isPlatform()
@@ -20,7 +20,7 @@ public class PersonagemBase : MonoBehaviour
     
     
 
-    public Vector2 movement;
+    //public Vector2 movement;
     private bool grounded;
     private bool isDoubleJumping;
     private bool isJumping = false;
@@ -28,27 +28,47 @@ public class PersonagemBase : MonoBehaviour
     private int pulosExtras;
 
 
+    public int lifePercentage;
     public Transform groundCheck;
-    public float raio;
+    public float raioGround;
     public LayerMask layerChao;
     
 
 
     [SerializeField] private float jumpForce = 12.0f;
     [SerializeField] private float speed = 0.5f;
-    
+
+    public static int idControler { get; set; }
 
     
-
-    void OnEnable()
+    public void ControlerInputEnable(int idControler)
     {
-        Player1Controller.OnHorizontalReceived += Andar;
-        Player1Controller.OnJumpReceived += Pular;
+        if(idControler == 0)
+        {
+            Player1Controller.OnHorizontalReceived += Andar;
+            Player1Controller.OnJumpReceived += Pular;
+        }
+
+        else if(idControler == 1)
+        {
+            Player2Controller.OnHorizontalReceived += Andar;
+            Player2Controller.OnJumpReceived += Pular;
+        }
     }
 
-    void OnDisable()
+    public void ControlerInputDisable(int idControler)
     {
-        Player1Controller.OnHorizontalReceived -= Andar;
+        if (idControler == 0)
+        {
+            Player1Controller.OnHorizontalReceived -= Andar;
+            Player1Controller.OnJumpReceived -= Pular;
+        }
+
+        else if (idControler == 1)
+        {
+            Player2Controller.OnHorizontalReceived -= Andar;
+            Player2Controller.OnJumpReceived -= Pular;
+        }
     }
 
     public void Start()
@@ -57,6 +77,7 @@ public class PersonagemBase : MonoBehaviour
         posicao = GetComponent<Transform>();
         anim = GetComponent<Animator>();
         box = GetComponent<BoxCollider2D>();
+        lifePercentage = 0;
     }
 
 
@@ -135,7 +156,7 @@ public class PersonagemBase : MonoBehaviour
 
     public bool IsGround()
     {
-        Collider2D[] collider = Physics2D.OverlapCircleAll(groundCheck.position, raio, layerChao);
+        Collider2D[] collider = Physics2D.OverlapCircleAll(groundCheck.position, raioGround, layerChao);
 
         if(collider.Length >= 0)
         {

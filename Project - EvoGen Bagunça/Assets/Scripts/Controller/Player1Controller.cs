@@ -17,10 +17,12 @@ public class Player1Controller : MonoBehaviour
     // delegates
     public delegate void HorizontalActions(float horizontal);
     public delegate void JumpActions(InputAction.CallbackContext context);
+    public delegate void PunchActions(InputAction.CallbackContext context);
 
     //eventos
     public static event HorizontalActions OnHorizontalReceived;
     public static event JumpActions OnJumpReceived;
+    public static event PunchActions OnPunchReceived;
 
 
 
@@ -39,7 +41,8 @@ public class Player1Controller : MonoBehaviour
     private void Awake()
     {
         controle = new ControlesPlayer();
-        GerarPlayer();
+        PersonagemBase.idControler = 0;
+        GerarPlayer();  
     }
     void Start()
     {
@@ -49,6 +52,7 @@ public class Player1Controller : MonoBehaviour
     void Update()
     {
         Movimento();
+
     }
 
     public void GerarPlayer()
@@ -67,13 +71,21 @@ public class Player1Controller : MonoBehaviour
 
     public void Movimento()
     {
-            direcao = controle.Player.Movimentacao.ReadValue<Vector2>(); // vector2(-1,0)
-            if (OnHorizontalReceived != null) { OnHorizontalReceived(direcao.x); }            
+        
+        direcao = controle.Player.Movimentacao.ReadValue<Vector2>(); // vector2(-1,0)
+        //print("to no direção 1:" + direcao);
+        if (OnHorizontalReceived != null) { OnHorizontalReceived(direcao.x); }            
     }
 
     public void Pulo(InputAction.CallbackContext context)
     {
-            if (OnJumpReceived != null) { OnJumpReceived(context); }
+
+        if (OnJumpReceived != null) { OnJumpReceived(context); }
+    }
+
+    public void Punch(InputAction.CallbackContext context) 
+    {
+        if (OnPunchReceived != null) { OnPunchReceived(context); }
     }
 
     public void SetIdPersonagem(int id) 
