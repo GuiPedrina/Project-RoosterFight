@@ -20,11 +20,18 @@ public class Zhang : PersonagemBase
         IsGround();
         NoAr();
         anim.SetFloat("Fall", rig.velocity.y);
+
+        ControlerInputEnable(idControler);
+        ControlerInputDisable(idControler);
+
+        //ControlerInputLeleEnable(idControler);
+        //ControlerInputLeleDisable(idControler);
+
         //print(NoAr());
     }
     public void SaiVoando()
     {
-        rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 5);
+        rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 10);
     }
 
     
