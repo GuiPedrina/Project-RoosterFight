@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Troca",
+                    "type": "Button",
+                    "id": "55fffd58-2170-41bf-984b-769d44a48d95",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -174,6 +183,17 @@
                     "action": "AtkRanged",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "511c83bb-cb73-4462-9d0f-8c274217462e",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Troca",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -284,6 +304,54 @@
                     "processors": "",
                     "groups": "",
                     "action": "MeeleAtk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerSelection",
+            "id": "c89c7cd9-0f00-4204-9944-cad3670a67f9",
+            "actions": [
+                {
+                    "name": "Direita",
+                    "type": "Button",
+                    "id": "cd19b4c7-0df9-4f80-b8a5-07cb0f332f8b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Esquerda",
+                    "type": "Button",
+                    "id": "c04be292-2908-4ccc-8ae6-a0777adf5a6d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "91a9d08c-d6f6-494d-9f46-c4eb2973c517",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Direita",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1ac1664-c5cc-410d-8a49-c76913918445",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Esquerda",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

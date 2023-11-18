@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class MenuPrincipalManager : MonoBehaviour
@@ -22,11 +21,9 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private AudioSource fundoMusical;
 
    
-
-
     private void Awake(){
         ButtonOpcoes.onClick.AddListener(OnButtonAbrirOpcoes);
-        ButtonFazL.onClick.AddListener(FazL);
+        //ButtonFazL.onClick.AddListener(FazL);
     }
 
   
@@ -83,8 +80,8 @@ public class MenuPrincipalManager : MonoBehaviour
         
     }
 
-    public void FazL(){
-        fazL.Play();
-        fundoMusical.Stop();
-    }
+    //public void FazL(){
+    //    fazL.Play();
+    //    fundoMusical.Stop();
+    //}
 }

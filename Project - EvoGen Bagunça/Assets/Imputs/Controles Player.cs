@@ -62,6 +62,15 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Troca"",
+                    ""type"": ""Button"",
+                    ""id"": ""55fffd58-2170-41bf-984b-769d44a48d95"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -196,6 +205,17 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
                     ""action"": ""AtkRanged"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""511c83bb-cb73-4462-9d0f-8c274217462e"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Troca"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -310,6 +330,54 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""PlayerSelection"",
+            ""id"": ""c89c7cd9-0f00-4204-9944-cad3670a67f9"",
+            ""actions"": [
+                {
+                    ""name"": ""Direita"",
+                    ""type"": ""Button"",
+                    ""id"": ""cd19b4c7-0df9-4f80-b8a5-07cb0f332f8b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Esquerda"",
+                    ""type"": ""Button"",
+                    ""id"": ""c04be292-2908-4ccc-8ae6-a0777adf5a6d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""91a9d08c-d6f6-494d-9f46-c4eb2973c517"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Direita"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e1ac1664-c5cc-410d-8a49-c76913918445"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Esquerda"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -320,11 +388,16 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_AtkMeele = m_Player.FindAction("AtkMeele", throwIfNotFound: true);
         m_Player_AtkRanged = m_Player.FindAction("AtkRanged", throwIfNotFound: true);
+        m_Player_Troca = m_Player.FindAction("Troca", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
         m_Player2_Movimentacao = m_Player2.FindAction("Movimentacao", throwIfNotFound: true);
         m_Player2_Jump = m_Player2.FindAction("Jump", throwIfNotFound: true);
         m_Player2_MeeleAtk = m_Player2.FindAction("MeeleAtk", throwIfNotFound: true);
+        // PlayerSelection
+        m_PlayerSelection = asset.FindActionMap("PlayerSelection", throwIfNotFound: true);
+        m_PlayerSelection_Direita = m_PlayerSelection.FindAction("Direita", throwIfNotFound: true);
+        m_PlayerSelection_Esquerda = m_PlayerSelection.FindAction("Esquerda", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -390,6 +463,7 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_AtkMeele;
     private readonly InputAction m_Player_AtkRanged;
+    private readonly InputAction m_Player_Troca;
     public struct PlayerActions
     {
         private @ControlesPlayer m_Wrapper;
@@ -398,6 +472,7 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @AtkMeele => m_Wrapper.m_Player_AtkMeele;
         public InputAction @AtkRanged => m_Wrapper.m_Player_AtkRanged;
+        public InputAction @Troca => m_Wrapper.m_Player_Troca;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -419,6 +494,9 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
             @AtkRanged.started += instance.OnAtkRanged;
             @AtkRanged.performed += instance.OnAtkRanged;
             @AtkRanged.canceled += instance.OnAtkRanged;
+            @Troca.started += instance.OnTroca;
+            @Troca.performed += instance.OnTroca;
+            @Troca.canceled += instance.OnTroca;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -435,6 +513,9 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
             @AtkRanged.started -= instance.OnAtkRanged;
             @AtkRanged.performed -= instance.OnAtkRanged;
             @AtkRanged.canceled -= instance.OnAtkRanged;
+            @Troca.started -= instance.OnTroca;
+            @Troca.performed -= instance.OnTroca;
+            @Troca.canceled -= instance.OnTroca;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -514,17 +595,77 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
         }
     }
     public Player2Actions @Player2 => new Player2Actions(this);
+
+    // PlayerSelection
+    private readonly InputActionMap m_PlayerSelection;
+    private List<IPlayerSelectionActions> m_PlayerSelectionActionsCallbackInterfaces = new List<IPlayerSelectionActions>();
+    private readonly InputAction m_PlayerSelection_Direita;
+    private readonly InputAction m_PlayerSelection_Esquerda;
+    public struct PlayerSelectionActions
+    {
+        private @ControlesPlayer m_Wrapper;
+        public PlayerSelectionActions(@ControlesPlayer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Direita => m_Wrapper.m_PlayerSelection_Direita;
+        public InputAction @Esquerda => m_Wrapper.m_PlayerSelection_Esquerda;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerSelection; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerSelectionActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerSelectionActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Add(instance);
+            @Direita.started += instance.OnDireita;
+            @Direita.performed += instance.OnDireita;
+            @Direita.canceled += instance.OnDireita;
+            @Esquerda.started += instance.OnEsquerda;
+            @Esquerda.performed += instance.OnEsquerda;
+            @Esquerda.canceled += instance.OnEsquerda;
+        }
+
+        private void UnregisterCallbacks(IPlayerSelectionActions instance)
+        {
+            @Direita.started -= instance.OnDireita;
+            @Direita.performed -= instance.OnDireita;
+            @Direita.canceled -= instance.OnDireita;
+            @Esquerda.started -= instance.OnEsquerda;
+            @Esquerda.performed -= instance.OnEsquerda;
+            @Esquerda.canceled -= instance.OnEsquerda;
+        }
+
+        public void RemoveCallbacks(IPlayerSelectionActions instance)
+        {
+            if (m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerSelectionActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerSelectionActions @PlayerSelection => new PlayerSelectionActions(this);
     public interface IPlayerActions
     {
         void OnMovimentacao(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnAtkMeele(InputAction.CallbackContext context);
         void OnAtkRanged(InputAction.CallbackContext context);
+        void OnTroca(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
     {
         void OnMovimentacao(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnMeeleAtk(InputAction.CallbackContext context);
+    }
+    public interface IPlayerSelectionActions
+    {
+        void OnDireita(InputAction.CallbackContext context);
+        void OnEsquerda(InputAction.CallbackContext context);
     }
 }
