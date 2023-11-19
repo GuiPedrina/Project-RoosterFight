@@ -26,6 +26,8 @@ public  class PersonagemBase : MonoBehaviour
     private bool isJumping = false;
     private bool isAir = false;
     private int pulosExtras;
+    public GameObject spawn;
+    public GameObject spawn2;
 
 
     public int lifePercentage;
@@ -77,7 +79,11 @@ public  class PersonagemBase : MonoBehaviour
         posicao = GetComponent<Transform>();
         anim = GetComponent<Animator>();
         box = GetComponent<BoxCollider2D>();
-        lifePercentage = 0;
+
+
+        spawn = GameObject.Find("Player1Controler");
+        spawn2 = GameObject.Find("Player2Controler");
+
     }
 
 
@@ -195,4 +201,23 @@ public  class PersonagemBase : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(idControler == 0)
+        {
+            if (collision.gameObject.CompareTag("Morte"))
+            {
+                transform.position = spawn.transform.position;
+            }
+        }else if(idControler == 1)
+        {
+            if (collision.gameObject.CompareTag("Morte"))
+            {
+                transform.position = spawn2.transform.position;
+            }
+        }
+
+        
+        
+    }
 }
