@@ -84,7 +84,7 @@ public class Lele : PersonagemBase
             {
                 if (punched.CompareTag("Zhang"))
                 {
-                    punched.GetComponent<Zhang>().lifePercentage += 10;
+                    punched.GetComponent<Zhang>().Dano(10);
                     punched.GetComponent<Zhang>().SaiVoando();
                 }
             }

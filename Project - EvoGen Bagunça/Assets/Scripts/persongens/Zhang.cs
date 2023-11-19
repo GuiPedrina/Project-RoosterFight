@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class Zhang : PersonagemBase
 {
+    private HUD hud;
+
     private void OnEnable()
     {
         ControlerInputEnable(idControler);
@@ -13,6 +15,11 @@ public class Zhang : PersonagemBase
     private void OnDisable()
     {
         ControlerInputDisable(idControler);
+    }
+
+    private void Awake()
+    {
+        hud = FindAnyObjectByType<HUD>();
     }
 
     private void Update()
@@ -32,6 +39,12 @@ public class Zhang : PersonagemBase
     public void SaiVoando()
     {
         rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 10);
+    }
+
+    public void Dano(int dano)
+    {
+        lifePercentage += dano;
+        hud.atualizaVida(lifePercentage);
     }
 
     
