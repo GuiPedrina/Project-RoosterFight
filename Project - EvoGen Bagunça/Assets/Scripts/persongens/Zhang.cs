@@ -36,9 +36,12 @@ public class Zhang : PersonagemBase
 
         //print(NoAr());
     }
-    public void SaiVoando()
+    public void SaiVoando(Transform posicaoDano)
     {
-        rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 10);
+        //rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 10);
+
+        Vector2 direction = (this.transform.position - posicaoDano.transform.position).normalized;
+        rig.AddForce(new Vector2(lifePercentage, 1f * lifePercentage), ForceMode2D.Impulse);
     }
 
     public void Dano(int dano)

@@ -71,7 +71,10 @@ public class Lele : PersonagemBase
 
     private void Punch(InputAction.CallbackContext context)
     {
-        anim.SetTrigger("Punch");
+        if (context.performed)
+        {
+            anim.SetTrigger("Punch");
+        }
     }
 
     private void PunchColider()
@@ -85,11 +88,10 @@ public class Lele : PersonagemBase
                 if (punched.CompareTag("Zhang"))
                 {
                     punched.GetComponent<Zhang>().Dano(10);
-                    punched.GetComponent<Zhang>().SaiVoando();
+                    punched.GetComponent<Zhang>().SaiVoando(punchCheck);
                 }
             }
         }
-        
 
     }
 }
