@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Player2Controller : MonoBehaviour
 {
-    [SerializeField] private int idPersonagem = 0;
+    public static int idPersonagem;
     private Vector2 direcao;
 
     [SerializeField] private Transform trfPlayer2;

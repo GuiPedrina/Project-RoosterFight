@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MenuPrincipalManager : MonoBehaviour
 {
-    [SerializeField] private string nomeDoLevelDeJogo;
+    [SerializeField] private string proximaCena;
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
     [SerializeField] private GameObject painelSons;
@@ -29,7 +29,7 @@ public class MenuPrincipalManager : MonoBehaviour
   
     public void Jogar()
     {
-        SceneManager.LoadScene(nomeDoLevelDeJogo);
+        SceneManager.LoadScene(proximaCena);
     }
  
     public void OnButtonAbrirOpcoes()

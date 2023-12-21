@@ -310,7 +310,7 @@
             ]
         },
         {
-            "name": "PlayerSelection",
+            "name": "Player1Selection",
             "id": "c89c7cd9-0f00-4204-9944-cad3670a67f9",
             "actions": [
                 {
@@ -323,9 +323,45 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Cima",
+                    "type": "Button",
+                    "id": "ae2fc875-120f-445c-8e32-a76f906d0e39",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Esquerda",
                     "type": "Button",
                     "id": "c04be292-2908-4ccc-8ae6-a0777adf5a6d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Baixo",
+                    "type": "Button",
+                    "id": "a95f02af-19d3-46f9-87f6-acadb107f6cb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Enter",
+                    "type": "Button",
+                    "id": "78044b63-76dd-4d81-8133-caec21471509",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Voltar",
+                    "type": "Button",
+                    "id": "35ff1679-d43d-4497-95e1-154b59e2c7b0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press",
@@ -352,6 +388,178 @@
                     "processors": "",
                     "groups": "",
                     "action": "Esquerda",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "66d0ce14-ca57-43e3-98fa-b87708c698d7",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cima",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb7abb63-2aa4-4bf0-a92e-7c7445c816e7",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Baixo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5d39e96-3add-4c43-b714-72d7d1ad5246",
+                    "path": "<Keyboard>/u",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Enter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa0bdcff-b1f0-4afd-bfe5-2b27b57887ed",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Voltar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player2Selection",
+            "id": "e73452b4-63f3-4c5e-819e-c258f5ccb091",
+            "actions": [
+                {
+                    "name": "Direita",
+                    "type": "Button",
+                    "id": "e896dad7-b2c4-4228-a581-21317efaf886",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Cima",
+                    "type": "Button",
+                    "id": "16946866-b969-49c5-88b9-38e1a66718d6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Baixo",
+                    "type": "Button",
+                    "id": "acd4aad1-a595-440e-88cd-0430bf428908",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Esquerda",
+                    "type": "Button",
+                    "id": "52cc9d2f-829d-453a-ae6c-548e6edfd5a3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Enter",
+                    "type": "Button",
+                    "id": "68a6c6a5-cd77-4b95-8a8f-27a3d8074ad8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Voltar",
+                    "type": "Button",
+                    "id": "b8f09fb5-31e3-4af1-b79c-6cba07b86202",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c142a689-7769-44b0-a1ff-32c05db7331e",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Direita",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5bab1107-ed1a-4c40-b320-fee6cd4f7e90",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Esquerda",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d40fa486-a324-4886-813c-4c0efccee67d",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cima",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8be0ef48-52bc-4717-a6ca-91220397eeeb",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Baixo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09934497-ad26-4e85-bfdd-c0d6cfdc2f4b",
+                    "path": "<Keyboard>/numpad1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Enter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5068ee90-4ec4-4d53-a9df-e9b6792a76c8",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Voltar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

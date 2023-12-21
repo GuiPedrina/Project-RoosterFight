@@ -332,7 +332,7 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""PlayerSelection"",
+            ""name"": ""Player1Selection"",
             ""id"": ""c89c7cd9-0f00-4204-9944-cad3670a67f9"",
             ""actions"": [
                 {
@@ -345,9 +345,45 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
+                    ""name"": ""Cima"",
+                    ""type"": ""Button"",
+                    ""id"": ""ae2fc875-120f-445c-8e32-a76f906d0e39"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
                     ""name"": ""Esquerda"",
                     ""type"": ""Button"",
                     ""id"": ""c04be292-2908-4ccc-8ae6-a0777adf5a6d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Baixo"",
+                    ""type"": ""Button"",
+                    ""id"": ""a95f02af-19d3-46f9-87f6-acadb107f6cb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Enter"",
+                    ""type"": ""Button"",
+                    ""id"": ""78044b63-76dd-4d81-8133-caec21471509"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Voltar"",
+                    ""type"": ""Button"",
+                    ""id"": ""35ff1679-d43d-4497-95e1-154b59e2c7b0"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press"",
@@ -376,6 +412,178 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
                     ""action"": ""Esquerda"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""66d0ce14-ca57-43e3-98fa-b87708c698d7"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cima"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cb7abb63-2aa4-4bf0-a92e-7c7445c816e7"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Baixo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a5d39e96-3add-4c43-b714-72d7d1ad5246"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aa0bdcff-b1f0-4afd-bfe5-2b27b57887ed"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Voltar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Player2Selection"",
+            ""id"": ""e73452b4-63f3-4c5e-819e-c258f5ccb091"",
+            ""actions"": [
+                {
+                    ""name"": ""Direita"",
+                    ""type"": ""Button"",
+                    ""id"": ""e896dad7-b2c4-4228-a581-21317efaf886"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Cima"",
+                    ""type"": ""Button"",
+                    ""id"": ""16946866-b969-49c5-88b9-38e1a66718d6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Baixo"",
+                    ""type"": ""Button"",
+                    ""id"": ""acd4aad1-a595-440e-88cd-0430bf428908"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Esquerda"",
+                    ""type"": ""Button"",
+                    ""id"": ""52cc9d2f-829d-453a-ae6c-548e6edfd5a3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Enter"",
+                    ""type"": ""Button"",
+                    ""id"": ""68a6c6a5-cd77-4b95-8a8f-27a3d8074ad8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Voltar"",
+                    ""type"": ""Button"",
+                    ""id"": ""b8f09fb5-31e3-4af1-b79c-6cba07b86202"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""c142a689-7769-44b0-a1ff-32c05db7331e"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Direita"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5bab1107-ed1a-4c40-b320-fee6cd4f7e90"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Esquerda"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d40fa486-a324-4886-813c-4c0efccee67d"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cima"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8be0ef48-52bc-4717-a6ca-91220397eeeb"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Baixo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""09934497-ad26-4e85-bfdd-c0d6cfdc2f4b"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5068ee90-4ec4-4d53-a9df-e9b6792a76c8"",
+                    ""path"": ""<Keyboard>/numpad2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Voltar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -394,10 +602,22 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
         m_Player2_Movimentacao = m_Player2.FindAction("Movimentacao", throwIfNotFound: true);
         m_Player2_Jump = m_Player2.FindAction("Jump", throwIfNotFound: true);
         m_Player2_MeeleAtk = m_Player2.FindAction("MeeleAtk", throwIfNotFound: true);
-        // PlayerSelection
-        m_PlayerSelection = asset.FindActionMap("PlayerSelection", throwIfNotFound: true);
-        m_PlayerSelection_Direita = m_PlayerSelection.FindAction("Direita", throwIfNotFound: true);
-        m_PlayerSelection_Esquerda = m_PlayerSelection.FindAction("Esquerda", throwIfNotFound: true);
+        // Player1Selection
+        m_Player1Selection = asset.FindActionMap("Player1Selection", throwIfNotFound: true);
+        m_Player1Selection_Direita = m_Player1Selection.FindAction("Direita", throwIfNotFound: true);
+        m_Player1Selection_Cima = m_Player1Selection.FindAction("Cima", throwIfNotFound: true);
+        m_Player1Selection_Esquerda = m_Player1Selection.FindAction("Esquerda", throwIfNotFound: true);
+        m_Player1Selection_Baixo = m_Player1Selection.FindAction("Baixo", throwIfNotFound: true);
+        m_Player1Selection_Enter = m_Player1Selection.FindAction("Enter", throwIfNotFound: true);
+        m_Player1Selection_Voltar = m_Player1Selection.FindAction("Voltar", throwIfNotFound: true);
+        // Player2Selection
+        m_Player2Selection = asset.FindActionMap("Player2Selection", throwIfNotFound: true);
+        m_Player2Selection_Direita = m_Player2Selection.FindAction("Direita", throwIfNotFound: true);
+        m_Player2Selection_Cima = m_Player2Selection.FindAction("Cima", throwIfNotFound: true);
+        m_Player2Selection_Baixo = m_Player2Selection.FindAction("Baixo", throwIfNotFound: true);
+        m_Player2Selection_Esquerda = m_Player2Selection.FindAction("Esquerda", throwIfNotFound: true);
+        m_Player2Selection_Enter = m_Player2Selection.FindAction("Enter", throwIfNotFound: true);
+        m_Player2Selection_Voltar = m_Player2Selection.FindAction("Voltar", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -596,59 +816,177 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
     }
     public Player2Actions @Player2 => new Player2Actions(this);
 
-    // PlayerSelection
-    private readonly InputActionMap m_PlayerSelection;
-    private List<IPlayerSelectionActions> m_PlayerSelectionActionsCallbackInterfaces = new List<IPlayerSelectionActions>();
-    private readonly InputAction m_PlayerSelection_Direita;
-    private readonly InputAction m_PlayerSelection_Esquerda;
-    public struct PlayerSelectionActions
+    // Player1Selection
+    private readonly InputActionMap m_Player1Selection;
+    private List<IPlayer1SelectionActions> m_Player1SelectionActionsCallbackInterfaces = new List<IPlayer1SelectionActions>();
+    private readonly InputAction m_Player1Selection_Direita;
+    private readonly InputAction m_Player1Selection_Cima;
+    private readonly InputAction m_Player1Selection_Esquerda;
+    private readonly InputAction m_Player1Selection_Baixo;
+    private readonly InputAction m_Player1Selection_Enter;
+    private readonly InputAction m_Player1Selection_Voltar;
+    public struct Player1SelectionActions
     {
         private @ControlesPlayer m_Wrapper;
-        public PlayerSelectionActions(@ControlesPlayer wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Direita => m_Wrapper.m_PlayerSelection_Direita;
-        public InputAction @Esquerda => m_Wrapper.m_PlayerSelection_Esquerda;
-        public InputActionMap Get() { return m_Wrapper.m_PlayerSelection; }
+        public Player1SelectionActions(@ControlesPlayer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Direita => m_Wrapper.m_Player1Selection_Direita;
+        public InputAction @Cima => m_Wrapper.m_Player1Selection_Cima;
+        public InputAction @Esquerda => m_Wrapper.m_Player1Selection_Esquerda;
+        public InputAction @Baixo => m_Wrapper.m_Player1Selection_Baixo;
+        public InputAction @Enter => m_Wrapper.m_Player1Selection_Enter;
+        public InputAction @Voltar => m_Wrapper.m_Player1Selection_Voltar;
+        public InputActionMap Get() { return m_Wrapper.m_Player1Selection; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerSelectionActions set) { return set.Get(); }
-        public void AddCallbacks(IPlayerSelectionActions instance)
+        public static implicit operator InputActionMap(Player1SelectionActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayer1SelectionActions instance)
         {
-            if (instance == null || m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_Player1SelectionActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_Player1SelectionActionsCallbackInterfaces.Add(instance);
             @Direita.started += instance.OnDireita;
             @Direita.performed += instance.OnDireita;
             @Direita.canceled += instance.OnDireita;
+            @Cima.started += instance.OnCima;
+            @Cima.performed += instance.OnCima;
+            @Cima.canceled += instance.OnCima;
             @Esquerda.started += instance.OnEsquerda;
             @Esquerda.performed += instance.OnEsquerda;
             @Esquerda.canceled += instance.OnEsquerda;
+            @Baixo.started += instance.OnBaixo;
+            @Baixo.performed += instance.OnBaixo;
+            @Baixo.canceled += instance.OnBaixo;
+            @Enter.started += instance.OnEnter;
+            @Enter.performed += instance.OnEnter;
+            @Enter.canceled += instance.OnEnter;
+            @Voltar.started += instance.OnVoltar;
+            @Voltar.performed += instance.OnVoltar;
+            @Voltar.canceled += instance.OnVoltar;
         }
 
-        private void UnregisterCallbacks(IPlayerSelectionActions instance)
+        private void UnregisterCallbacks(IPlayer1SelectionActions instance)
         {
             @Direita.started -= instance.OnDireita;
             @Direita.performed -= instance.OnDireita;
             @Direita.canceled -= instance.OnDireita;
+            @Cima.started -= instance.OnCima;
+            @Cima.performed -= instance.OnCima;
+            @Cima.canceled -= instance.OnCima;
             @Esquerda.started -= instance.OnEsquerda;
             @Esquerda.performed -= instance.OnEsquerda;
             @Esquerda.canceled -= instance.OnEsquerda;
+            @Baixo.started -= instance.OnBaixo;
+            @Baixo.performed -= instance.OnBaixo;
+            @Baixo.canceled -= instance.OnBaixo;
+            @Enter.started -= instance.OnEnter;
+            @Enter.performed -= instance.OnEnter;
+            @Enter.canceled -= instance.OnEnter;
+            @Voltar.started -= instance.OnVoltar;
+            @Voltar.performed -= instance.OnVoltar;
+            @Voltar.canceled -= instance.OnVoltar;
         }
 
-        public void RemoveCallbacks(IPlayerSelectionActions instance)
+        public void RemoveCallbacks(IPlayer1SelectionActions instance)
         {
-            if (m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_Player1SelectionActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IPlayerSelectionActions instance)
+        public void SetCallbacks(IPlayer1SelectionActions instance)
         {
-            foreach (var item in m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_Player1SelectionActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_PlayerSelectionActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_Player1SelectionActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public PlayerSelectionActions @PlayerSelection => new PlayerSelectionActions(this);
+    public Player1SelectionActions @Player1Selection => new Player1SelectionActions(this);
+
+    // Player2Selection
+    private readonly InputActionMap m_Player2Selection;
+    private List<IPlayer2SelectionActions> m_Player2SelectionActionsCallbackInterfaces = new List<IPlayer2SelectionActions>();
+    private readonly InputAction m_Player2Selection_Direita;
+    private readonly InputAction m_Player2Selection_Cima;
+    private readonly InputAction m_Player2Selection_Baixo;
+    private readonly InputAction m_Player2Selection_Esquerda;
+    private readonly InputAction m_Player2Selection_Enter;
+    private readonly InputAction m_Player2Selection_Voltar;
+    public struct Player2SelectionActions
+    {
+        private @ControlesPlayer m_Wrapper;
+        public Player2SelectionActions(@ControlesPlayer wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Direita => m_Wrapper.m_Player2Selection_Direita;
+        public InputAction @Cima => m_Wrapper.m_Player2Selection_Cima;
+        public InputAction @Baixo => m_Wrapper.m_Player2Selection_Baixo;
+        public InputAction @Esquerda => m_Wrapper.m_Player2Selection_Esquerda;
+        public InputAction @Enter => m_Wrapper.m_Player2Selection_Enter;
+        public InputAction @Voltar => m_Wrapper.m_Player2Selection_Voltar;
+        public InputActionMap Get() { return m_Wrapper.m_Player2Selection; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(Player2SelectionActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayer2SelectionActions instance)
+        {
+            if (instance == null || m_Wrapper.m_Player2SelectionActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_Player2SelectionActionsCallbackInterfaces.Add(instance);
+            @Direita.started += instance.OnDireita;
+            @Direita.performed += instance.OnDireita;
+            @Direita.canceled += instance.OnDireita;
+            @Cima.started += instance.OnCima;
+            @Cima.performed += instance.OnCima;
+            @Cima.canceled += instance.OnCima;
+            @Baixo.started += instance.OnBaixo;
+            @Baixo.performed += instance.OnBaixo;
+            @Baixo.canceled += instance.OnBaixo;
+            @Esquerda.started += instance.OnEsquerda;
+            @Esquerda.performed += instance.OnEsquerda;
+            @Esquerda.canceled += instance.OnEsquerda;
+            @Enter.started += instance.OnEnter;
+            @Enter.performed += instance.OnEnter;
+            @Enter.canceled += instance.OnEnter;
+            @Voltar.started += instance.OnVoltar;
+            @Voltar.performed += instance.OnVoltar;
+            @Voltar.canceled += instance.OnVoltar;
+        }
+
+        private void UnregisterCallbacks(IPlayer2SelectionActions instance)
+        {
+            @Direita.started -= instance.OnDireita;
+            @Direita.performed -= instance.OnDireita;
+            @Direita.canceled -= instance.OnDireita;
+            @Cima.started -= instance.OnCima;
+            @Cima.performed -= instance.OnCima;
+            @Cima.canceled -= instance.OnCima;
+            @Baixo.started -= instance.OnBaixo;
+            @Baixo.performed -= instance.OnBaixo;
+            @Baixo.canceled -= instance.OnBaixo;
+            @Esquerda.started -= instance.OnEsquerda;
+            @Esquerda.performed -= instance.OnEsquerda;
+            @Esquerda.canceled -= instance.OnEsquerda;
+            @Enter.started -= instance.OnEnter;
+            @Enter.performed -= instance.OnEnter;
+            @Enter.canceled -= instance.OnEnter;
+            @Voltar.started -= instance.OnVoltar;
+            @Voltar.performed -= instance.OnVoltar;
+            @Voltar.canceled -= instance.OnVoltar;
+        }
+
+        public void RemoveCallbacks(IPlayer2SelectionActions instance)
+        {
+            if (m_Wrapper.m_Player2SelectionActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayer2SelectionActions instance)
+        {
+            foreach (var item in m_Wrapper.m_Player2SelectionActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_Player2SelectionActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public Player2SelectionActions @Player2Selection => new Player2SelectionActions(this);
     public interface IPlayerActions
     {
         void OnMovimentacao(InputAction.CallbackContext context);
@@ -663,9 +1001,22 @@ public partial class @ControlesPlayer: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnMeeleAtk(InputAction.CallbackContext context);
     }
-    public interface IPlayerSelectionActions
+    public interface IPlayer1SelectionActions
     {
         void OnDireita(InputAction.CallbackContext context);
+        void OnCima(InputAction.CallbackContext context);
         void OnEsquerda(InputAction.CallbackContext context);
+        void OnBaixo(InputAction.CallbackContext context);
+        void OnEnter(InputAction.CallbackContext context);
+        void OnVoltar(InputAction.CallbackContext context);
+    }
+    public interface IPlayer2SelectionActions
+    {
+        void OnDireita(InputAction.CallbackContext context);
+        void OnCima(InputAction.CallbackContext context);
+        void OnBaixo(InputAction.CallbackContext context);
+        void OnEsquerda(InputAction.CallbackContext context);
+        void OnEnter(InputAction.CallbackContext context);
+        void OnVoltar(InputAction.CallbackContext context);
     }
 }

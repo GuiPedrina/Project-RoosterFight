@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Player1Controller : MonoBehaviour
-
 {
-    [SerializeField] private int idPersonagem = 1;
+    public static int idPersonagem;
     private Vector2 direcao;
 
     [SerializeField] private Transform trfPlayer1;
