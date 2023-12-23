@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 65265094}
   - component: {fileID: 65265093}
   - component: {fileID: 65265095}
+  - component: {fileID: 65265096}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -241,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 65265093}
+  anim: {fileID: 65265096}
   trans: {fileID: 65265092}
   render: {fileID: 65265091}
   Zhang: {fileID: 1378857628}
@@ -397,6 +399,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!95 &65265096
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65265089}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a668effba4b4f904e860e75ead8da43b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &76458360
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +954,7 @@ GameObject:
   - component: {fileID: 1151996293}
   - component: {fileID: 1151996294}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Indicador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1165,6 +1188,7 @@ GameObject:
   - component: {fileID: 1349716095}
   - component: {fileID: 1349716094}
   - component: {fileID: 1349716099}
+  - component: {fileID: 1349716100}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -1304,6 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 1349716095}
+  anim: {fileID: 1349716100}
   trans: {fileID: 1349716098}
   render: {fileID: 1349716097}
   Zhang: {fileID: 1378857628}
@@ -1315,6 +1340,27 @@ MonoBehaviour:
   personagemSelect: 0
   posterLele: {fileID: 76458360}
   posterZhang: {fileID: 1800531840}
+--- !u!95 &1349716100
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349716093}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a86869c20fcae254380d7ec9502a48b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1378857626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,7 +1824,7 @@ GameObject:
   - component: {fileID: 2014803428}
   - component: {fileID: 2014803429}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Indicador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

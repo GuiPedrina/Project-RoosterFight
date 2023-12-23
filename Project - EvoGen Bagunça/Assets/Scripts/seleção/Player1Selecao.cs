@@ -8,7 +8,7 @@ public class Player1Selecao : MonoBehaviour
     [SerializeField] private Rigidbody2D rig;
     private Vector2 direcao;
     [SerializeField] private ControlesPlayer controle;
-
+    [SerializeField] private Animator anim;
 
     [SerializeField] private Transform trans;
     [SerializeField] private SpriteRenderer render;
@@ -52,6 +52,12 @@ public class Player1Selecao : MonoBehaviour
         if(personagemSelect == false)
         {
             Movimento();
+            anim.SetBool("Selecionado", false);
+        }
+
+        if(personagemSelect == true)
+        {
+            anim.SetBool("Selecionado", true);
         }
         
         PersonagemSelect();
