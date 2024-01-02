@@ -12,7 +12,27 @@ public class MenuSelection : MonoBehaviour
 
     [SerializeField] private string cenaJogo;
 
-    // Start is called before the first frame update
+    //private bool cancelaPt = true;
+
+    [SerializeField] private Animator anim;
+    //[SerializeField] private ControlesPlayer controle;
+
+
+    //private void OnEnable()
+    //{
+    //    controle.Enable();
+    //}
+
+    //private void OnDisable()
+    //{
+    //    controle.Disable();
+    //}
+
+    //private void Awake()
+    //{
+    //    controle = new ControlesPlayer();
+    //}
+
     void Start()
     {
         
@@ -23,8 +43,42 @@ public class MenuSelection : MonoBehaviour
     {
         if (player1.personagemSelect == true && player2.personagemSelect == true)
         {
-            IniciarPt();
+            //cancelaPt = false;
+            StartCoroutine("TudoPronto");
         }
+
+        
+    }
+
+
+    IEnumerator TudoPronto()
+    {
+        anim.SetBool("Start", true);
+
+
+        yield return new WaitForSeconds(3);
+
+
+        IniciarPt();
+
+        //if (controle.Player1Selection.Voltar.triggered)
+        //{
+        //    cancelaPt = true;
+        //    print("aaaaa");
+        //}
+        //else if (controle.Player2Selection.Voltar.triggered)
+        //{
+        //    cancelaPt = true;
+        //    print("bbbbb");
+        //}
+
+        //if (cancelaPt == false)
+        //{
+        //    anim.SetBool("Start", true);
+
+        //    yield return new WaitForSeconds(3);
+
+        //}
     }
 
     void IniciarPt()
