@@ -1,4 +1,3 @@
-using Mecanica;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +9,6 @@ public class Lele : PersonagemBase
     [SerializeField] private Transform punchCheck;
     [SerializeField] private float raioSoco;
     [SerializeField] private LayerMask layerRivals;
-
-    public KnockBack knockBack;
 
 
     private void OnEnable()
@@ -53,11 +50,6 @@ public class Lele : PersonagemBase
         }
     }
 
-    private void Awake()
-    {
-        knockBack = new KnockBack();
-    }
-
     void Update()
     {
         //Chamada de função dessa classe
@@ -95,23 +87,11 @@ public class Lele : PersonagemBase
             {
                 if (punched.CompareTag("Zhang"))
                 {
-                    var posicaoGolpe = knockBack.AnguloVetor(punched.transform, gameObject.transform);
-
                     punched.GetComponent<Zhang>().Dano(10);
-<<<<<<< HEAD:Project - EvoGen/Assets/Scripts/persongens/Lele.cs
-                    punched.GetComponent<Zhang>().AtivarSairVonado(posicaoGolpe);
-=======
                     punched.GetComponent<Zhang>().SaiVoando(punchCheck);
->>>>>>> b5ea2da60a7d920fddfd30c37f6ba36ff2a13de9:Project - EvoGen BagunÃ§a/Assets/Scripts/persongens/Lele.cs
                 }
             }
         }
 
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(punchCheck.position, 0.5f);
     }
 }

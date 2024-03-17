@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project - EvoGen/Assets/Menus/LelePoster.jpg.meta
+guid: 2a4469ebde62b4f42bab957dc45f645a
+========
 guid: 849b89b9ae6394b4997c20c68e7bde5a
+>>>>>>>> b5ea2da60a7d920fddfd30c37f6ba36ff2a13de9:Project - EvoGen/Assets/Menus/FundoSelection.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
