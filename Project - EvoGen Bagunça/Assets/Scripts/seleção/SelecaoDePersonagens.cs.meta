@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Project - EvoGen/Assets/Scripts/Mecanicas/KnockBack.cs.meta
+<<<<<<<< HEAD:Project - EvoGen/Assets/Scripts/Mecanicas/KnockBack.cs.meta
+guid: 8a105df96a9230b4eadc4606f7a07235
+========
+guid: e7f3484dfaa42fc4d8d42029152c6961
+>>>>>>>> b5ea2da60a7d920fddfd30c37f6ba36ff2a13de9:Project - EvoGen Bagunça/Assets/Scripts/seleção/MenuSelection.cs.meta
+=======
+guid: 67c75e007852d3647b1bbf473375ff95
+>>>>>>> parent of cccea3e (EvoGem V1.5):Project - EvoGen Bagunça/Assets/Scripts/seleção/SelecaoDePersonagens.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

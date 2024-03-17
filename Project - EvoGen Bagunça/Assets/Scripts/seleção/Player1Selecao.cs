@@ -6,6 +6,7 @@ public class Player1Selecao : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D rig;
+<<<<<<< HEAD
     private Vector2 direcao;
     [SerializeField] private ControlesPlayer controle;
     [SerializeField] private Animator anim;
@@ -24,6 +25,17 @@ public class Player1Selecao : MonoBehaviour
 
     [SerializeField] private GameObject posterLele;
     [SerializeField] private GameObject posterZhang;
+=======
+
+    private Vector2 direcao;
+
+    [SerializeField] private ControlesPlayer controle;
+
+    [SerializeField] private int caixa;
+
+    [SerializeField] private Transform trans;
+
+>>>>>>> parent of cccea3e (EvoGem V1.5)
 
     private void OnEnable()
     {
@@ -49,6 +61,7 @@ public class Player1Selecao : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         if(personagemSelect == false)
         {
             Movimento();
@@ -61,10 +74,14 @@ public class Player1Selecao : MonoBehaviour
         }
         
         PersonagemSelect();
+=======
+        Movimento();
+>>>>>>> parent of cccea3e (EvoGem V1.5)
     }
 
     private void Movimento()
     {
+<<<<<<< HEAD
         Vector2 posicaoP1 = new Vector2(trans.position.x, trans.position.y);
 
         if (controle.Player1Selection.Direita.triggered && trans.position.x <= 2.31)
@@ -93,10 +110,22 @@ public class Player1Selecao : MonoBehaviour
         {
             //Vector2 move = new Vector2(0, - trans.localScale.y);
             Vector2 move = new Vector2(0, -render.size.y - 0.86f);
+=======
+        if (controle.PlayerSelection.Direita.triggered)
+        {
+            Vector2 move = new Vector2 (trans.localScale.x, 0);
+            trans.Translate(move);
+        }
+
+        else if (controle.PlayerSelection.Esquerda.triggered)
+        {
+            Vector2 move = new Vector2(- trans.localScale.x, 0);
+>>>>>>> parent of cccea3e (EvoGem V1.5)
             trans.Translate(move);
         }
 
     }
+<<<<<<< HEAD
 
     private void PersonagemSelect()
     {
@@ -167,4 +196,6 @@ public class Player1Selecao : MonoBehaviour
     }
 
 
+=======
+>>>>>>> parent of cccea3e (EvoGem V1.5)
 }

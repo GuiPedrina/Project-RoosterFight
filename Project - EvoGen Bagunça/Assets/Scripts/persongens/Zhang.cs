@@ -36,12 +36,18 @@ public class Zhang : PersonagemBase
 
         //print(NoAr());
     }
+<<<<<<< HEAD
     public void SaiVoando(Transform posicaoDano)
     {
         //rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 10);
 
         Vector2 direction = (this.transform.position - posicaoDano.transform.position).normalized;
         rig.AddForce(new Vector2(lifePercentage, 1f * lifePercentage), ForceMode2D.Impulse);
+=======
+    public void SaiVoando()
+    {
+        rig.velocity = new Vector2(rig.velocity.x + lifePercentage, rig.velocity.y + 10);
+>>>>>>> parent of cccea3e (EvoGem V1.5)
     }
 
     public void Dano(int dano)
