@@ -2,6 +2,7 @@ using Mecanica;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,6 +24,34 @@ public class Zhang : PersonagemBase
     {
         ControlerInputDisable(idControler);
     }
+
+    public void ControlerInputLeleEnable(int idControler)
+    {
+        if (idControler == 0)
+        {
+            Player1Controller.OnPunchReceived += Punch;
+        }
+
+        else if (idControler == 1)
+        {
+            //Player2Controller.OnPunchReceived += Pular;
+        }
+    }
+
+    public void ControlerInputLeleDisable(int idControler)
+    {
+        if (idControler == 0)
+        {
+            Player1Controller.OnPunchReceived -= Punch;
+        }
+
+        else if (idControler == 1)
+        {
+        }
+    }
+
+
+
 
     private void Awake()
     {
@@ -69,6 +98,15 @@ public class Zhang : PersonagemBase
             rig.AddForce(direcaoVoo.normalized * vida * 0.1f, ForceMode2D.Impulse);
         }
     }
+
+    private void Punch(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            anim.SetTrigger("Punch");
+        }
+    }
+
 
     public void Dano(int dano)
     {

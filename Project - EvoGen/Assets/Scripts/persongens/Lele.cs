@@ -11,6 +11,8 @@ public class Lele : PersonagemBase
     [SerializeField] private float raioSoco;
     [SerializeField] private LayerMask layerRivals;
 
+    private int countPunch = 1;
+
     public KnockBack knockBack;
 
 
@@ -79,13 +81,33 @@ public class Lele : PersonagemBase
 
     private void Punch(InputAction.CallbackContext context)
     {
+        
         if (context.performed)
         {
-            anim.SetTrigger("Punch");
+            switch (countPunch)
+            {
+                
+                case 1:
+//                    StartCoroutine(RecargaCombo());
+                    anim.SetInteger("PunchCombo", 1);
+                    countPunch++;
+                    break;
+
+                case 2:
+                    anim.SetInteger("PunchCombo",2);
+                    countPunch++;
+                    break;
+
+                case 3:
+                    anim.SetInteger("PunchCombo", 3);
+                    countPunch = 1;
+                    break;
+
+            }
         }
     }
 
-    private void PunchColider()
+    private void PunchColiderKnock()
     {
 
         Collider2D[] collider = Physics2D.OverlapCircleAll(punchCheck.position, raioSoco, layerRivals);
@@ -103,6 +125,31 @@ public class Lele : PersonagemBase
             }
         }
 
+    }
+
+    public void PunchColider()
+    {
+
+        Collider2D[] collider = Physics2D.OverlapCircleAll(punchCheck.position, raioSoco, layerRivals);
+        foreach (Collider2D punched in collider)
+        {
+            if (punched.gameObject != gameObject)
+            {
+                if (punched.CompareTag("Zhang"))
+                {
+                    var posicaoGolpe = knockBack.AnguloVetor(punched.transform, gameObject.transform);
+
+                    punched.GetComponent<Zhang>().Dano(10);
+                }
+            }
+        }
+
+    }
+
+    IEnumerator RecargaCombo()
+    {
+        yield return new WaitForSeconds(2);
+        countPunch = 1;
     }
 
     void OnDrawGizmosSelected()
