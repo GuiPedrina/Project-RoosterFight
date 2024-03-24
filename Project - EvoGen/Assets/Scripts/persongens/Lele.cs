@@ -12,6 +12,7 @@ public class Lele : PersonagemBase
     [SerializeField] private LayerMask layerRivals;
 
     private int countPunch = 1;
+    private float timePunch = 1f;
 
     public KnockBack knockBack;
 
@@ -88,18 +89,18 @@ public class Lele : PersonagemBase
             {
                 
                 case 1:
-//                    StartCoroutine(RecargaCombo());
-                    anim.SetInteger("PunchCombo", 1);
+                    StartCoroutine(RecargaCombo());
+                    anim.SetTrigger("Punch1");
                     countPunch++;
                     break;
 
                 case 2:
-                    anim.SetInteger("PunchCombo",2);
+                    anim.SetTrigger("Punch2");
                     countPunch++;
                     break;
 
                 case 3:
-                    anim.SetInteger("PunchCombo", 3);
+                    anim.SetTrigger("Punch3");
                     countPunch = 1;
                     break;
 
@@ -148,7 +149,23 @@ public class Lele : PersonagemBase
 
     IEnumerator RecargaCombo()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(timePunch);
+        switch (countPunch)
+        {
+            case 1:
+                countPunch = 1;
+                break;
+
+            case 2:
+                yield return new WaitForSeconds(timePunch);
+                countPunch = 1;
+                break;
+
+            case 3:
+                yield return new WaitForSeconds(timePunch * 2);
+                countPunch = 1;
+                break;
+        }
         countPunch = 1;
     }
 
