@@ -1,0 +1,1958 @@
+fileFormatVersion: 2
+guid: d5c4fdf5750f6e746b2e3d62013dec0f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_1"
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 729
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6e376a0ec1fd949ac097b30a500c1d
+      internalID: 1095379997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_2"
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 733
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdab6a1b1911cbb4e98adf5cfbdafbb6
+      internalID: -2131710492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_3"
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 731
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c9acbf642f88c4ca89dae62b4a35dd
+      internalID: -943784759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_4"
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 731
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dce2cd0c1c19a14991ed9c11b0129c6
+      internalID: 1768673693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_5"
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 732
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8fa38c28efd9d49bfe3bf5ec7ba4ed
+      internalID: -674986263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_8"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 664
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b466b8f7b0532418bed07890c694eb
+      internalID: -1720520709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_9"
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 677
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffc1714d75de7c469149027fa912a4d
+      internalID: 1508148721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_10"
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 678
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b444c925b61d541984523ba86ecbd5
+      internalID: 418293549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_12"
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 668
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13daf6ebed3c6c4e9fc8fca63ecec79
+      internalID: 295882269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_13"
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 664
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9990b95966f46345bb017bcbdddc174
+      internalID: -94940603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_16"
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 596
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd389fc93785c2246ba1186e8a30cc54
+      internalID: -675332215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_17"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 599
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256b182009b3d85468d12143f4b026fd
+      internalID: 792222251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_18"
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 576
+        width: 29
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22615a55d9e76644b9c2da95380331e1
+      internalID: -902254621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_19"
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 582
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed17b0817b68ed4683e7a2397354ce5
+      internalID: -761296775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_20"
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 585
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8ffa80f91afe244b404633239915fe
+      internalID: 638694883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_23"
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 517
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37622d9833c41f409a93592ad857da0
+      internalID: 426139733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_24"
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 518
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c831dbb961c379648ae3239bf41a567e
+      internalID: -1955835027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_25"
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 527
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c394e77d4caa0f647b1f632424982a64
+      internalID: 873455825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_26"
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 532
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5858f5ec8afbd848a3285d511e67fa0
+      internalID: -1710003646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_27"
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 520
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3df3d76a1293ea4cb3682fee31c4ede
+      internalID: -2030711253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_28"
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 523
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196bd6f247a11b047a704f0bd798cc33
+      internalID: 2107057271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_29"
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 519
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3370ee2c4dba4d14ca2b7da0432e73ac
+      internalID: -941011461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_31"
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 441
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cee3021db22e04498c06834ed9d2cb
+      internalID: -1887104836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_32"
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 442
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffcd73b166298a4daab5af878c051f8
+      internalID: -1864753698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_33"
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 441
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1133e9cd85fb4ad4f84a1154e27aa540
+      internalID: -1701897512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_35"
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 440
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ffae700a7237840989e29b8becff0f
+      internalID: -263313860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_36"
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 440
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b84d14fc24e75409c1264591e76362
+      internalID: -440276488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_37"
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 440
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d664133cf0d6be747ab3cfad23b8c71b
+      internalID: -1418657177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_38"
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 439
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfe63ab5e315f645b7fa077b6c27eb8
+      internalID: 1736444969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_40"
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 439
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c8870dee048cd41a49355957c71108
+      internalID: 1668747448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_41"
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 367
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f795b8cb766ca1409ba99d811899792
+      internalID: 1199394583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_42"
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 367
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe117e25c1e73f34e8ca760a0926e625
+      internalID: 1567127689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_44"
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 367
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f304b9a690c3b28448759d7eacb03795
+      internalID: -1495009100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_45"
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 367
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e344791bfc39a97499c29acd8dcd9830
+      internalID: 1067980932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_46"
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 367
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463f63560388cb6418c2900a8221c622
+      internalID: 578623225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_49"
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 367
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15eb39937b26b34e9ff734b4e8a0fd9
+      internalID: 350716034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_50"
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 367
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bd892d360a75648a32048c09087c55
+      internalID: 1091036161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_51"
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 367
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1497373e64cea47bb5c6e97c8fc3a6
+      internalID: 118762246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_52"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 295
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fa76d10e7707d4c9197cd446804d11
+      internalID: -1535625027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_53"
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 295
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcabd5ca56f1214c928439f52f527b7
+      internalID: 524373780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_54"
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 295
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400f6137bfe210c40b0b830df33d9325
+      internalID: 1453332904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_55"
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 295
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9ec7fac1edac4468c733bafba591f1
+      internalID: -1194995078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_56"
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 295
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e56654c9fca3343a3e1417780f04a4
+      internalID: -755386538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_57"
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 295
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7bafe31a5438b47b041134d3facb28
+      internalID: 857524750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_60"
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 295
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7436d6644cdadb14d8d1eaa4210108f9
+      internalID: -45679148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_61"
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 295
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfdc575658f9f2468ae3b5b5471d08c
+      internalID: -766933145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_66"
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 225
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b166bbb1a4dd7746b91c810cd9a6cb0
+      internalID: 500741079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_68"
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 225
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a41b02b67478f347982371f33bc5979
+      internalID: 1681947601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_69"
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 224
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c91596bd313264680f4e1fdee7d2b7
+      internalID: 144534306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_70"
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 224
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec0e8c83df6ff34d90d04175ac47d10
+      internalID: -1862202278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_71"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 224
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107a4b4300f566544b860b00cc5fd667
+      internalID: 646779957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_72"
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 224
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab5b5368c4e5f44987c123e08c5b938
+      internalID: -1625058167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_73"
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 225
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6028a3221267c94bab1fe8189267ccb
+      internalID: -749438852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_65"
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 225
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a0d1db438c4dc43a54939eaf40bbb9
+      internalID: -1258771248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_67"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 225
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b7e13e692b471409deb9c53a00a96c
+      internalID: 2007928781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_74"
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 223
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6b06387fff8c04ea4baf2569723046
+      internalID: -495192087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_78"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 151
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae291140b02bd8348885a083e0c0e731
+      internalID: 1470256567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_79"
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 151
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94821f428a4d7414d911f43d0f98382c
+      internalID: 1571201892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_80"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 151
+        width: 63
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168dff239d5beac4f869ed75db3f7a95
+      internalID: -957810030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_81"
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 151
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee355b73d8b45644b2d362874d13f6e
+      internalID: -710673628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_82"
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 151
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72948eb35ddbb6d4db7ec5756d06e222
+      internalID: -277497031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_83"
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 151
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5da1b77df56b84a91ae48a1f02ec53
+      internalID: -231620297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_84"
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 151
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5cb18dfdf337f489ba968726d2bd7a
+      internalID: 725296775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_85"
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 151
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c523ae460f25f14ca7e1dc5cbc6e99c
+      internalID: 1591271611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_86"
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 151
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33b0f880aae7214482418000f86e310
+      internalID: 801821979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_87"
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 80
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89038fd93878b254c98aed3c38460b95
+      internalID: -1532942460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_88"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 79
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd12c5c2cedb4214ca523e7334f4c46c
+      internalID: -998276289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_89"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 79
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19406bc7409321498fd1ba68a2eef43
+      internalID: 803518027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_90"
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 79
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2b493c16c4a7a4989212af589a57c5
+      internalID: 905383564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_91"
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 79
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbfd7d5619b80541806b3e8bb976125
+      internalID: -1756207775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_92"
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 79
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ebf1823f8871547aba5abd33f65356
+      internalID: -759606867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_93"
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 79
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c472b6c8100a50f4a9534ee3d1852997
+      internalID: -1302743718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_97"
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 79
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a7944a9884c8347a0f0616e75ef7e4
+      internalID: -1964926170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_99"
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 79
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45233514f1846ea47895db9284131300
+      internalID: 1439978224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_100"
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 7
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac4050bd88c8b545be1dc6847737db9
+      internalID: -878733860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_101"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 7
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd2936c83a464747a9f5e11ed34a29b
+      internalID: 714412873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_102"
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 7
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cf370919de455468498c5842185f7e
+      internalID: 734058515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_103"
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 7
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be76e124e7050a4195cdc3cb42972f7
+      internalID: -564756981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_108"
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 7
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a65e7f798a04148b31a42a27f52765
+      internalID: 1244514693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_114"
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 7
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8606a7e9bd3e6419adb7b65e20c264
+      internalID: 1358825026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_116"
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 7
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64bfd884dd705847a4e935b55e3dffc
+      internalID: -1947642157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Lel\xEASpritesGolpesEsbo\xE7o_117"
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 7
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cdd4cf163da454698351fed98086c6
+      internalID: -31584759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Lel\xEASpritesGolpesEsbo\xE7o_0": -1678221026
+      "Lel\xEASpritesGolpesEsbo\xE7o_1": 1095379997
+      "Lel\xEASpritesGolpesEsbo\xE7o_10": 418293549
+      "Lel\xEASpritesGolpesEsbo\xE7o_100": -878733860
+      "Lel\xEASpritesGolpesEsbo\xE7o_101": 714412873
+      "Lel\xEASpritesGolpesEsbo\xE7o_102": 734058515
+      "Lel\xEASpritesGolpesEsbo\xE7o_103": -564756981
+      "Lel\xEASpritesGolpesEsbo\xE7o_104": 1868109522
+      "Lel\xEASpritesGolpesEsbo\xE7o_105": 1058319343
+      "Lel\xEASpritesGolpesEsbo\xE7o_106": 2028376172
+      "Lel\xEASpritesGolpesEsbo\xE7o_107": 600103334
+      "Lel\xEASpritesGolpesEsbo\xE7o_108": 1244514693
+      "Lel\xEASpritesGolpesEsbo\xE7o_109": 1994229275
+      "Lel\xEASpritesGolpesEsbo\xE7o_11": -671226122
+      "Lel\xEASpritesGolpesEsbo\xE7o_110": -1411960292
+      "Lel\xEASpritesGolpesEsbo\xE7o_111": -1003432862
+      "Lel\xEASpritesGolpesEsbo\xE7o_112": -1114129412
+      "Lel\xEASpritesGolpesEsbo\xE7o_113": 931328698
+      "Lel\xEASpritesGolpesEsbo\xE7o_114": 1358825026
+      "Lel\xEASpritesGolpesEsbo\xE7o_115": -1292157669
+      "Lel\xEASpritesGolpesEsbo\xE7o_116": -1947642157
+      "Lel\xEASpritesGolpesEsbo\xE7o_117": -31584759
+      "Lel\xEASpritesGolpesEsbo\xE7o_12": 295882269
+      "Lel\xEASpritesGolpesEsbo\xE7o_13": -94940603
+      "Lel\xEASpritesGolpesEsbo\xE7o_14": -358828465
+      "Lel\xEASpritesGolpesEsbo\xE7o_15": 757895577
+      "Lel\xEASpritesGolpesEsbo\xE7o_16": -675332215
+      "Lel\xEASpritesGolpesEsbo\xE7o_17": 792222251
+      "Lel\xEASpritesGolpesEsbo\xE7o_18": -902254621
+      "Lel\xEASpritesGolpesEsbo\xE7o_19": -761296775
+      "Lel\xEASpritesGolpesEsbo\xE7o_2": -2131710492
+      "Lel\xEASpritesGolpesEsbo\xE7o_20": 638694883
+      "Lel\xEASpritesGolpesEsbo\xE7o_21": 1744295941
+      "Lel\xEASpritesGolpesEsbo\xE7o_22": -68567750
+      "Lel\xEASpritesGolpesEsbo\xE7o_23": 426139733
+      "Lel\xEASpritesGolpesEsbo\xE7o_24": -1955835027
+      "Lel\xEASpritesGolpesEsbo\xE7o_25": 873455825
+      "Lel\xEASpritesGolpesEsbo\xE7o_26": -1710003646
+      "Lel\xEASpritesGolpesEsbo\xE7o_27": -2030711253
+      "Lel\xEASpritesGolpesEsbo\xE7o_28": 2107057271
+      "Lel\xEASpritesGolpesEsbo\xE7o_29": -941011461
+      "Lel\xEASpritesGolpesEsbo\xE7o_3": -943784759
+      "Lel\xEASpritesGolpesEsbo\xE7o_30": -755979785
+      "Lel\xEASpritesGolpesEsbo\xE7o_31": -1887104836
+      "Lel\xEASpritesGolpesEsbo\xE7o_32": -1864753698
+      "Lel\xEASpritesGolpesEsbo\xE7o_33": -1701897512
+      "Lel\xEASpritesGolpesEsbo\xE7o_34": -270553814
+      "Lel\xEASpritesGolpesEsbo\xE7o_35": -263313860
+      "Lel\xEASpritesGolpesEsbo\xE7o_36": -440276488
+      "Lel\xEASpritesGolpesEsbo\xE7o_37": -1418657177
+      "Lel\xEASpritesGolpesEsbo\xE7o_38": 1736444969
+      "Lel\xEASpritesGolpesEsbo\xE7o_39": -809999966
+      "Lel\xEASpritesGolpesEsbo\xE7o_4": 1768673693
+      "Lel\xEASpritesGolpesEsbo\xE7o_40": 1668747448
+      "Lel\xEASpritesGolpesEsbo\xE7o_41": 1199394583
+      "Lel\xEASpritesGolpesEsbo\xE7o_42": 1567127689
+      "Lel\xEASpritesGolpesEsbo\xE7o_43": -165525504
+      "Lel\xEASpritesGolpesEsbo\xE7o_44": -1495009100
+      "Lel\xEASpritesGolpesEsbo\xE7o_45": 1067980932
+      "Lel\xEASpritesGolpesEsbo\xE7o_46": 578623225
+      "Lel\xEASpritesGolpesEsbo\xE7o_47": 1411995921
+      "Lel\xEASpritesGolpesEsbo\xE7o_48": 1331105261
+      "Lel\xEASpritesGolpesEsbo\xE7o_49": 350716034
+      "Lel\xEASpritesGolpesEsbo\xE7o_5": -674986263
+      "Lel\xEASpritesGolpesEsbo\xE7o_50": 1091036161
+      "Lel\xEASpritesGolpesEsbo\xE7o_51": 118762246
+      "Lel\xEASpritesGolpesEsbo\xE7o_52": -1535625027
+      "Lel\xEASpritesGolpesEsbo\xE7o_53": 524373780
+      "Lel\xEASpritesGolpesEsbo\xE7o_54": 1453332904
+      "Lel\xEASpritesGolpesEsbo\xE7o_55": -1194995078
+      "Lel\xEASpritesGolpesEsbo\xE7o_56": -755386538
+      "Lel\xEASpritesGolpesEsbo\xE7o_57": 857524750
+      "Lel\xEASpritesGolpesEsbo\xE7o_58": 373770087
+      "Lel\xEASpritesGolpesEsbo\xE7o_59": -1782495936
+      "Lel\xEASpritesGolpesEsbo\xE7o_60": -45679148
+      "Lel\xEASpritesGolpesEsbo\xE7o_61": -766933145
+      "Lel\xEASpritesGolpesEsbo\xE7o_62": -144811750
+      "Lel\xEASpritesGolpesEsbo\xE7o_63": 1964812774
+      "Lel\xEASpritesGolpesEsbo\xE7o_64": 1960478492
+      "Lel\xEASpritesGolpesEsbo\xE7o_65": -1258771248
+      "Lel\xEASpritesGolpesEsbo\xE7o_66": 500741079
+      "Lel\xEASpritesGolpesEsbo\xE7o_67": 2007928781
+      "Lel\xEASpritesGolpesEsbo\xE7o_68": 1681947601
+      "Lel\xEASpritesGolpesEsbo\xE7o_69": 144534306
+      "Lel\xEASpritesGolpesEsbo\xE7o_70": -1862202278
+      "Lel\xEASpritesGolpesEsbo\xE7o_71": 646779957
+      "Lel\xEASpritesGolpesEsbo\xE7o_72": -1625058167
+      "Lel\xEASpritesGolpesEsbo\xE7o_73": -749438852
+      "Lel\xEASpritesGolpesEsbo\xE7o_74": -495192087
+      "Lel\xEASpritesGolpesEsbo\xE7o_78": 1470256567
+      "Lel\xEASpritesGolpesEsbo\xE7o_79": 1571201892
+      "Lel\xEASpritesGolpesEsbo\xE7o_8": -1720520709
+      "Lel\xEASpritesGolpesEsbo\xE7o_80": -957810030
+      "Lel\xEASpritesGolpesEsbo\xE7o_81": -710673628
+      "Lel\xEASpritesGolpesEsbo\xE7o_82": -277497031
+      "Lel\xEASpritesGolpesEsbo\xE7o_83": -231620297
+      "Lel\xEASpritesGolpesEsbo\xE7o_84": 725296775
+      "Lel\xEASpritesGolpesEsbo\xE7o_85": 1591271611
+      "Lel\xEASpritesGolpesEsbo\xE7o_86": 801821979
+      "Lel\xEASpritesGolpesEsbo\xE7o_87": -1532942460
+      "Lel\xEASpritesGolpesEsbo\xE7o_88": -998276289
+      "Lel\xEASpritesGolpesEsbo\xE7o_89": 803518027
+      "Lel\xEASpritesGolpesEsbo\xE7o_9": 1508148721
+      "Lel\xEASpritesGolpesEsbo\xE7o_90": 905383564
+      "Lel\xEASpritesGolpesEsbo\xE7o_91": -1756207775
+      "Lel\xEASpritesGolpesEsbo\xE7o_92": -759606867
+      "Lel\xEASpritesGolpesEsbo\xE7o_93": -1302743718
+      "Lel\xEASpritesGolpesEsbo\xE7o_94": 115524089
+      "Lel\xEASpritesGolpesEsbo\xE7o_95": -1694913733
+      "Lel\xEASpritesGolpesEsbo\xE7o_96": -1987980758
+      "Lel\xEASpritesGolpesEsbo\xE7o_97": -1964926170
+      "Lel\xEASpritesGolpesEsbo\xE7o_98": 1920742284
+      "Lel\xEASpritesGolpesEsbo\xE7o_99": 1439978224
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

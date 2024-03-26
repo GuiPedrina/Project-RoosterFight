@@ -85,6 +85,13 @@ public class Lele : PersonagemBase
         
         if (context.performed)
         {
+            // Trigger do golpe caso esteja no ar
+            if (NoAr())
+            {
+                anim.SetTrigger("AirPunch");
+            }
+            //---------------------
+
             switch (countPunch)
             {
                 
@@ -153,6 +160,7 @@ public class Lele : PersonagemBase
         switch (countPunch)
         {
             case 1:
+                yield return new WaitForSeconds(timePunch);
                 countPunch = 1;
                 break;
 

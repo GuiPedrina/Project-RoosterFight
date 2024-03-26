@@ -20,14 +20,30 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -773642030, guid: 1041a472f971d0c4789447f600b2bdff, type: 3}
-    - time: 0.125
-      value: {fileID: 2013060272, guid: 1041a472f971d0c4789447f600b2bdff, type: 3}
+      value: {fileID: -1258771248, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.083333336
+      value: {fileID: 500741079, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.16666667
+      value: {fileID: 2007928781, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.25
+      value: {fileID: 1681947601, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.33333334
+      value: {fileID: 144534306, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.41666666
+      value: {fileID: -1862202278, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.5
+      value: {fileID: 646779957, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.5833333
+      value: {fileID: -1625058167, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.6666667
+      value: {fileID: -749438852, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - time: 0.75
+      value: {fileID: -495192087, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 8
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -42,14 +58,22 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -773642030, guid: 1041a472f971d0c4789447f600b2bdff, type: 3}
-    - {fileID: 2013060272, guid: 1041a472f971d0c4789447f600b2bdff, type: 3}
+    - {fileID: -1258771248, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: 500741079, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: 2007928781, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: 1681947601, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: 144534306, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: -1862202278, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: 646779957, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: -1625058167, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: -749438852, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
+    - {fileID: -495192087, guid: d5c4fdf5750f6e746b2e3d62013dec0f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.8333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -69,7 +93,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.125
+  - time: 0.16666667
     functionName: PunchColiderKnock
     data: 
     objectReferenceParameter: {fileID: 0}
